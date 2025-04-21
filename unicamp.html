@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicamp - State University of Campinas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .unicamp-section {
+            padding: 80px 0;
+        }
+        .unicamp-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .unicamp-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .unicamp-header h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .unicamp-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .unicamp-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .unicamp-text {
+            line-height: 1.6;
+        }
+        .unicamp-text h3 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .unicamp-text p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .unicamp-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .unicamp-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .unicamp-video {
+            width: 100%;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .unicamp-video iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .unicamp-rankings {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .unicamp-rankings h3 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .ranking-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+        .ranking-category {
+            font-weight: bold;
+            color: #333;
+        }
+        .ranking-position {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .unicamp-facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+        .fact-item {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .fact-item:hover {
+            transform: translateY(-5px);
+        }
+        .fact-icon {
+            font-size: 40px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .fact-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+        .fact-text {
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .unicamp-content {
+                grid-template-columns: 1fr;
+            }
+            .unicamp-facts {
+                grid-template-columns: 1fr;
+            }
+            .unicamp-video iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="unicamp-section">
+        <div class="unicamp-container">
+            <div class="unicamp-header">
+                <h2>State University of Campinas (Unicamp)</h2>
+                <p>One of Brazil's premier public research universities and a center of excellence in education, research, and innovation</p>
+            </div>
+            
+            <div class="unicamp-content">
+                <div class="unicamp-text">
+                    <h3>About Unicamp</h3>
+                    <p>The State University of Campinas (Universidade Estadual de Campinas), commonly called Unicamp, is a public research university in the state of São Paulo, Brazil. Established in 1962, Unicamp was designed from scratch as an integrated research center unlike other top Brazilian universities, which were usually created by the consolidation of previously existing schools and institutes.</p>
+                    <p>Its research focus reflects on almost half of its students being graduate students, the largest proportion across all large universities in Brazil, and also in the large number of graduate programs it offers: 153 compared to 70 undergraduate programs.</p>
+                    <p>Unicamp is responsible for around 15% of Brazilian research, a disproportionately high number when compared to much larger and older institutions in the country. It also produces more patents than any other research organization in Brazil, being second only to the state-owned oil company, Petrobras.</p>
+                </div>
+                <div class="unicamp-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/UNICAMP_logo.svg/1200px-UNICAMP_logo.svg.png" alt="Unicamp Logo">
+                </div>
+            </div>
+            
+            <div class="unicamp-video">
+                <h3>Official Unicamp Video</h3>
+                <iframe src="https://www.youtube.com/embed/05TWvli1WNU" title="Unicamp official video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="unicamp-rankings">
+                <h3>Global Rankings</h3>
+                <div class="ranking-item">
+                    <span class="ranking-category">World Ranking</span>
+                    <span class="ranking-position">#234 of 14,131</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Latin America Ranking</span>
+                    <span class="ranking-position">#4 of 1,756</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Brazil Ranking</span>
+                    <span class="ranking-position">#3 of 198</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Nutrition and Food Science</span>
+                    <span class="ranking-position">#10 globally</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Dentistry</span>
+                    <span class="ranking-position">#13 globally</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Philosophy</span>
+                    <span class="ranking-position">#14 globally</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="ranking-category">Research Topics in Top 100 Globally</span>
+                    <span class="ranking-position">20 topics</span>
+                </div>
+            </div>
+            
+            <div class="unicamp-content" style="margin-top: 60px;">
+                <div class="unicamp-image">
+                    <img src="https://www.unicamp.br/unicamp/sites/default/files/styles/large/public/2022-08/Pra%C3%A7a%20do%20Ciclo%20B%C3%A1sico%20-%20Antonio%20Scarpinetti.jpg" alt="Unicamp Campus">
+                </div>
+                <div class="unicamp-text">
+                    <h3>Campus and Facilities</h3>
+                    <p>Unicamp's main campus occupies 3.5 square kilometers (860 acres) located in the district of Barão Geraldo, a suburban area 12 kilometers from the downtown center of Campinas, built shortly after the creation of the university.</p>
+                    <p>It also has satellite campuses in Limeira, Piracicaba, and Paulínia, and manages two technical high schools located in Campinas and Limeira. The university is also an integral part of the International HUB for Sustainable Development (HIDS), a model for smart city districts.</p>
+                    <p>Unicamp also dedicates itself to public health, paying special attention to its support centers and its Clinics Hospital, responsible for serving a metropolitan area with seven million people. The university is also a pioneer in the establishment of a Human Rights Executive Board and of racial and ethnic quotas for students.</p>
+                </div>
+            </div>
+            
+            <div class="unicamp-facts">
+                <div class="fact-item">
+                    <div class="fact-icon">📚</div>
+                    <div class="fact-number">5,000+</div>
+                    <div class="fact-text">Students graduate each year</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">🔬</div>
+                    <div class="fact-number">15%</div>
+                    <div class="fact-text">Of all Brazilian research</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">🎓</div>
+                    <div class="fact-number">153</div>
+                    <div class="fact-text">Graduate programs offered</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px; text-align: center;">
+                <p>For more information, visit the <a href="https://www.unicamp.br/unicamp/english" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: bold;">official Unicamp website</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

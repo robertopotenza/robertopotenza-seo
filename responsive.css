@@ -1,0 +1,118 @@
+/* Mobile Responsive Fixes */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.2rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+  
+  .hero-buttons .btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .about-image {
+    margin-bottom: 30px;
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+  }
+  
+  .timeline-item::after {
+    left: 11px;
+  }
+  
+  .project-grid, .media-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-item {
+    flex: 0 0 100%;
+  }
+  
+  .footer-info, .footer-links, .footer-newsletter {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) {
+  .btn, .nav-menu a, .project-link, .media-link, .social-links a {
+    padding: 12px 20px;
+  }
+  
+  .timeline-content, .project-item, .media-item, .testimonial-item {
+    padding: 25px;
+  }
+  
+  input, textarea, button {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+  }
+}
+
+/* Accessibility improvements */
+:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Print styles */
+@media print {
+  .header, .footer, .hero-buttons, .contact-form, .scroll-top {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: #000 !important;
+  }
+  
+  .section {
+    padding: 20px 0;
+    page-break-inside: avoid;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}

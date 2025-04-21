@@ -1,0 +1,59 @@
+🔧 Prompt to Adapt My Homepage into a Top-Tier Personal Branding Website
+I want to  Update the website you just created (https://kkvtqjsa.manus.space/) by transforming it into a world-class personal branding website that fully reflects my career, leadership, and accomplishments as a Vice President and General Manager in global operations.
+🎯 Objectives:
+•	Elevate the current homepage into an executive-level digital identity.
+•	Focus on presenting my achievements, leadership philosophy, and global experience in a visually stunning, interactive way.
+🔨 Key Instructions:
+1.	Visual Creation & Enhancements:
+o	Create custom images based on my career data and achievements.
+o	Integrate professional backgrounds and environments (e.g., boardrooms, industrial sites, global conferences).
+o	Feel free to incorporate new photos, executive-themed graphics, or simulated visuals that reflect high-level leadership and innovation.
+2.	Homepage Structure & Experience:
+o	Hero Section: Fullscreen background (professional image or slow-motion video), with headline and subheadline that captures my executive role and value proposition.
+o	About Me Section: Timeline format showing major milestones, career path, industries worked in. Optionally include a brief video or leadership quote.
+o	Achievements Section: Card-style layout displaying key metrics (P&L, expansions, awards, product launches, global teams).
+o	Testimonials: Rotating or scroll-based quotes from senior colleagues or clients.
+o	Media Section: Logos and links to interviews, podcast appearances, press mentions, and conferences.
+o	Contact/Call to Action: Integrated LinkedIn, Calendly, downloadable résumé, and secure contact form.
+3.	Design & UX Best Practices:
+o	Sophisticated, clean color palette (dark navy or charcoal + white + a bold accent like royal blue or gold).
+o	Use parallax effects, micro-interactions, fade-ins, and modern transitions.
+o	Mobile-first responsive design.
+o	Fast-loading, SEO-optimized, and accessibility-compliant structure.
+________________________________________
+📌 Additional Instruction: Add a Section/Tab for FGV
+Include a dedicated page or tab titled “My Education – FGV” that introduces:
+Fundação Getulio Vargas (FGV) is a prestigious Brazilian institution renowned for its excellence in education, research, and public policy. Established in 1944, FGV has consistently ranked among the top institutions in Brazil, Latin America, and globally.
+________________________________________
+🌍 Global and Regional Rankings
+•	QS World University Rankings:
+o	Ranked #51 globally in the Masters in Management 2025 rankings.
+o	Ranked #87 in the QS World University Rankings by Subject.
+•	Center for World University Rankings (CWUR) 2024:
+o	#846 worldwide out of 20,966 institutions (top 4.1% globally).
+o	#21 in Latin America and #12 in Brazil.
+•	Financial Times Rankings:
+o	FGV EAESP is featured in global business school rankings.
+________________________________________
+🏆 National Recognition
+•	INEP/IGC 2022:
+o	FGV secured six of the top ten positions in Brazil.
+o	FGV EBAPE ranked 1st, and FGV EPGE ranked 2nd nationally.
+•	University Magazine (Canada) 2025:
+o	Named best business school in Brazil, lauded for its practical curriculum, global partnerships, and innovation.
+________________________________________
+🧠 Think Tank Excellence
+•	University of Pennsylvania – Global Go To Think Tank Index 2020:
+o	Ranked #1 in Latin America and #3 globally.
+________________________________________
+🎓 Academic Accreditations
+•	FGV’s business schools (EAESP, EBAPE) hold the Triple Crown Accreditation:
+o	AACSB, AMBA, and EQUIS.
+•	FGV EBAPE was the first administration school in Latin America, continuing its leadership in business and public admin education.
+________________________________________
+💬 Student and Alumni Feedback
+Students and alumni highlight FGV’s academic rigor, renowned faculty, and strong alumni network. One alumnus shared:
+“FGV is arguably one of the best business schools in Latin America.”
+________________________________________
+Let me know if you'd like me to write the full content for each section of your new homepage, or if you want to start designing this layout!
+

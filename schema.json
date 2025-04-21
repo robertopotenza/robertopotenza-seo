@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Roberto Potenza",
+  "jobTitle": "VP of Operations",
+  "email": "eng.potenza@gmail.com",
+  "telephone": "812-565-3811",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Opal Fuels"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of São Paulo"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Federal University of Rio de Janeiro"
+    }
+  ],
+  "knowsAbout": [
+    "Manufacturing Operations",
+    "Operational Excellence",
+    "Sustainable Manufacturing",
+    "Lean Manufacturing",
+    "Multicultural Leadership"
+  ],
+  "knowsLanguage": [
+    "English",
+    "Portuguese",
+    "Spanish"
+  ],
+  "hasCredential": [
+    "Lean Six Sigma Black Belt",
+    "Project Management Professional (PMP)",
+    "ISO 9001 Lead Auditor"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/roberto-potenza"
+  ]
+}

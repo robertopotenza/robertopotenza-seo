@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGV - Roberto Potenza | Manufacturing & Operations Executive</title>
+    <meta name="description" content="Learn about Roberto Potenza's education at Fundação Getulio Vargas (FGV), a prestigious Brazilian institution renowned for its excellence in education, research, and public policy.">
+    <meta name="keywords" content="Roberto Potenza, FGV, Fundação Getulio Vargas, business education, Brazil education">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="FGV Education - Roberto Potenza">
+    <meta property="og:description" content="Learn about Roberto Potenza's education at Fundação Getulio Vargas (FGV), a prestigious Brazilian institution renowned for its excellence in education, research, and public policy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robertopotenza.com/fgv.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        /* Page-specific styles */
+        .fgv-hero {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('../images/fgv-campus.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+        }
+        
+        .fgv-hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .fgv-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .fgv-hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+        }
+        
+        .fgv-section {
+            padding: 80px 0;
+        }
+        
+        .fgv-section:nth-child(even) {
+            background-color: var(--gray-100);
+        }
+        
+        .fgv-section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .fgv-section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .fgv-section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .fgv-section-title p {
+            font-size: 1.1rem;
+            color: var(--gray-600);
+        }
+        
+        .fgv-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .fgv-intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+        }
+        
+        .fgv-rankings {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .fgv-ranking-card {
+            background-color: var(--background-light);
+            border-radius: var(--border-radius-medium);
+            overflow: hidden;
+            box-shadow: var(--box-shadow-medium);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .fgv-ranking-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-heavy);
+        }
+        
+        .fgv-ranking-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .fgv-ranking-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .fgv-ranking-description {
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+        
+        .fgv-recognition {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .fgv-recognition-item {
+            background-color: var(--background-light);
+            border-radius: var(--border-radius-medium);
+            overflow: hidden;
+            box-shadow: var(--box-shadow-medium);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+        }
+        
+        .fgv-recognition-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-heavy);
+        }
+        
+        .fgv-recognition-icon {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            font-size: 2.5rem;
+        }
+        
+        .fgv-recognition-content {
+            padding: 25px;
+        }
+        
+        .fgv-recognition-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .fgv-recognition-description {
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+        
+        .fgv-accreditations {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .fgv-accreditation {
+            width: 150px;
+            height: 150px;
+            background-color: var(--background-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--box-shadow-medium);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+        }
+        
+        .fgv-accreditation:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-heavy);
+        }
+        
+        .fgv-accreditation img {
+            max-width: 70%;
+            height: auto;
+        }
+        
+        .fgv-testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--background-light);
+            border-radius: var(--border-radius-medium);
+            box-shadow: var(--box-shadow-medium);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .fgv-testimonial:before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--accent-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .fgv-testimonial:after {
+            content: '\201D';
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            font-size: 4rem;
+            color: var(--accent-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .fgv-testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .fgv-back-to-home {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 992px) {
+            .fgv-rankings {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .fgv-recognition {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .fgv-hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .fgv-hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .fgv-rankings {
+                grid-template-columns: 1fr;
+            }
+            
+            .fgv-section {
+                padding: 60px 0;
+            }
+            
+            .fgv-section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">Roberto <span>Potenza</span></a>
+                <div class="mobile-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#achievements">Achievements</a></li>
+                    <li><a href="../index.html#projects">Case Studies</a></li>
+                    <li><a href="../index.html#media">Media</a></li>
+                    <li><a href="../index.html#testimonials">Testimonials</a></li>
+                    <li><a href="unicamp.html">Unicamp</a></li>
+                    <li><a href="fgv.html" class="active">FGV</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="fgv-hero">
+        <div class="fgv-hero-content" data-aos="fade-up">
+            <h1 class="fgv-hero-title">My Education – FGV</h1>
+            <p class="fgv-hero-subtitle">Fundação Getulio Vargas</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="fgv-section">
+        <div class="container">
+            <div class="fgv-section-title" data-aos="fade-up">
+                <h2>About FGV</h2>
+                <p>A prestigious Brazilian institution renowned for excellence</p>
+            </div>
+            <div class="fgv-intro" data-aos="fade-up">
+                <p>Fundação Getulio Vargas (FGV) is a prestigious Brazilian institution renowned for its excellence in education, research, and public policy. Established in 1944, FGV has consistently ranked among the top institutions in Brazil, Latin America, and globally.</p>
+                <p>As an alumnus of FGV, I gained valuable knowledge and skills that have been instrumental in my career as a manufacturing and operations executive. The institution's rigorous academic programs, world-class faculty, and emphasis on practical application provided me with a strong foundation for leadership in global industrial environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section class="fgv-section">
+        <div class="container">
+            <div class="fgv-section-title" data-aos="fade-up">
+                <h2>Global and Regional Rankings</h2>
+                <p>Recognition of FGV's academic excellence worldwide</p>
+            </div>
+            <div class="fgv-rankings">
+                <div class="fgv-ranking-card" data-aos="fade-up">
+                    <h3 class="fgv-ranking-title">QS World University Rankings</h3>
+                    <div class="fgv-ranking-value">#51</div>
+                    <p class="fgv-ranking-description">Ranked #51 globally in the Masters in Management 2025 rankings and #87 in the QS World University Rankings by Subject.</p>
+                </div>
+                <div class="fgv-ranking-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="fgv-ranking-title">Center for World University Rankings</h3>
+                    <div class="fgv-ranking-value">#846</div>
+                    <p class="fgv-ranking-description">Ranked #846 worldwide out of 20,966 institutions (top 4.1% globally), #21 in Latin America, and #12 in Brazil in the CWUR 2024 rankings.</p>
+                </div>
+                <div class="fgv-ranking-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="fgv-ranking-title">Financial Times Rankings</h3>
+                    <div class="fgv-ranking-value">Top Tier</div>
+                    <p class="fgv-ranking-description">FGV EAESP is featured in global business school rankings by the Financial Times, recognized for its world-class business education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- National Recognition Section -->
+    <section class="fgv-section">
+        <div class="container">
+            <div class="fgv-section-title" data-aos="fade-up">
+                <h2>National Recognition</h2>
+                <p>Leading position in Brazilian education</p>
+            </div>
+            <div class="fgv-recognition">
+                <div class="fgv-recognition-item" data-aos="fade-up">
+                    <div class="fgv-recognition-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="fgv-recognition-content">
+                        <h3 class="fgv-recognition-title">INEP/IGC 2022</h3>
+                        <p class="fgv-recognition-description">FGV secured six of the top ten positions in Brazil, with FGV EBAPE ranked 1st and FGV EPGE ranked 2nd nationally, demonstrating the institution's dominance in Brazilian higher education.</p>
+                    </div>
+                </div>
+                <div class="fgv-recognition-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fgv-recognition-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="fgv-recognition-content">
+                        <h3 class="fgv-recognition-title">University Magazine (Canada) 2025</h3>
+                        <p class="fgv-recognition-description">Named best business school in Brazil, lauded for its practical curriculum, global partnerships, and innovation in business education and research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Think Tank Section -->
+    <section class="fgv-section">
+        <div class="container">
+            <div class="fgv-section-title" data-aos="fade-up">
+                <h2>Think Tank Excellence</h2>
+                <p>Leading research and policy influence</p>
+            </div>
+            <div class="fgv-recognition">
+                <div class="fgv-recognition-item" data-aos="fade-up" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+                    <div class="fgv-recognition-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="fgv-recognition-content">
+                        <h3 class="fgv-recognition-title">University of Pennsylvania – Global Go To Think Tank Index 2020</h3>
+                        <p class="fgv-recognition-description">Ranked #1 in Latin America and #3 glob
+(Content truncated due to size limit. Use line ranges to read in chunks)
