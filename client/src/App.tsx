@@ -9,6 +9,7 @@ import Experience from "./pages/Experience";
 import Vision from "./pages/Vision";
 import Production from "./pages/Production";
 import Contact from "./pages/Contact";
+import ChromaloxCaseStudy from "./pages/ChromaloxCaseStudy";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/vision" component={Vision} />
       <Route path="/production" component={Production} />
       <Route path="/contact" component={Contact} />
+      <Route path="/case-study/chromalox" component={ChromaloxCaseStudy} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

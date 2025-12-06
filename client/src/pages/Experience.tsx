@@ -1,8 +1,10 @@
 import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Experience() {
   return (
@@ -100,7 +102,14 @@ export default function Experience() {
                   alt="Team Leadership" 
                   className="w-full h-64 object-cover rounded-sm border border-border/40 grayscale hover:grayscale-0 transition-all duration-500"
                 />
-                <p className="text-xs text-muted-foreground mt-2 italic">Building a culture of unity and performance ("We Are All One")</p>
+                <div className="flex justify-between items-center mt-3">
+                  <p className="text-xs text-muted-foreground italic">Building a culture of unity and performance ("We Are All One")</p>
+                  <Link href="/case-study/chromalox">
+                    <Button variant="link" className="text-primary p-0 h-auto font-medium text-xs hover:text-accent">
+                      View Expansion Case Study &rarr;
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
 
