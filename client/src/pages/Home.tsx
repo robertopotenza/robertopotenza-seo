@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Globe, Users, Target, Zap, Layers, ShieldCheck } from "lucide-react";
 import Testimonials from "@/components/Testimonials";
-import { Link } from "wouter";
+import { Link } from "wouter";;
 
 export default function Home() {
   return (

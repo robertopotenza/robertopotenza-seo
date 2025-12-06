@@ -40,13 +40,13 @@ export default function Vision() {
               <h2 className="font-serif text-3xl text-primary">The Strategic Opportunity</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  <strong className="text-primary">The Challenge:</strong> The entire Pilates equipment industry struggles with delivery reliability. Long lead times, unpredictable ETAs, and shipping damage are universal pain points.
+                  <strong className="text-primary">The Challenge:</strong> The entire Pilates equipment industry struggles with delivery reliability. Long lead times, unpredictable ETAs, and shipping flaws consistently undermine the customer experience.
                 </p>
                 <p>
                   <strong className="text-primary">The Vision:</strong> If Balanced Body becomes the first premium brand with truly premium logistics, we own the customer experience from checkout to setup.
                 </p>
                 <blockquote className="border-l-2 border-accent pl-6 italic text-primary font-serif text-xl">
-                  "Logistics is not a cost center — it is a competitive moat."
+                  "Logistics is not a cost center — it is our quality promise extended beyond the factory."
                 </blockquote>
               </div>
             </div>
@@ -87,9 +87,9 @@ export default function Vision() {
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Regional distribution hubs (EU, Japan)</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce lead times: Weeks → Days</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Zero-damage packaging redesign</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Regional distribution hubs (EU, Asia, Americas)</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce lead times: Months/Weeks → Days</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> premium product – premium logistics</li>
                 </ul>
               </CardContent>
             </Card>
@@ -105,7 +105,7 @@ export default function Vision() {
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Predictive quality dashboards</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Strengthen supplier quality</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> quality from the wood to the clients’ hands</li>
                   <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Protect brand reputation at scale</li>
                 </ul>
               </CardContent>
@@ -122,7 +122,7 @@ export default function Vision() {
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Redesign flow in Sacramento</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Implement line balancing</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Automate repetitive tasks, not craftsmanship</li>
                   <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Improve throughput without compromising craft</li>
                 </ul>
               </CardContent>
@@ -155,9 +155,9 @@ export default function Vision() {
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Coaching for long-tenured employees</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Calm, structured communication</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Build a confident, future-ready org</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Capture tribal knowledge into repeatable systems</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Honor the legacy and traditions that built Balanced Body</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Start with respect for the people who create the product</li>
                 </ul>
               </CardContent>
             </Card>
@@ -182,7 +182,7 @@ export default function Vision() {
               <div className="text-sm text-muted-foreground">Perspective</div>
             </div>
             <div>
-              <div className="text-4xl font-serif text-accent mb-2">Calm</div>
+              <div className="text-4xl font-serif text-accent mb-2">Belonging</div>
               <div className="text-sm text-muted-foreground">Leadership</div>
             </div>
           </div>

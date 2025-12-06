@@ -42,7 +42,7 @@ export default function Footer() {
       
       <div className="container mt-12 pt-8 border-t border-border/20 text-center text-xs text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} Roberto Potenza. All rights reserved.</p>
-        <p className="mt-2">Designed for Balanced Body CEO Interview Presentation.</p>
+        
       </div>
     </footer>
   );
