@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart3, Globe, Layers, ShieldCheck } from "lucide-react";
+import { ArrowRight, BarChart3, Globe, Users, Target, Zap, Layers, ShieldCheck } from "lucide-react";
+import Testimonials from "@/components/Testimonials";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -121,7 +122,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Metrics */}
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Call to Action */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
