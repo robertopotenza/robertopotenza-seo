@@ -35,8 +35,8 @@ export default function ChromaloxCaseStudy() {
             </div>
             <div className="relative">
               <img 
-                src="/images/team-celebration.png" 
-                alt="Chromalox Team Celebration" 
+                src="/images/chromalox-aerial.jpg" 
+                alt="Chromalox Expansion Aerial View" 
                 className="w-full rounded-sm shadow-sm border border-border/40"
               />
               <div className="absolute -bottom-6 -right-6 bg-background p-6 border border-border/40 shadow-sm max-w-xs hidden md:block">

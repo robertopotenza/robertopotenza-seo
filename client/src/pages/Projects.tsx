@@ -161,7 +161,7 @@ export default function Projects() {
                       </Link>
                     </div>
                     <div className="bg-secondary/30 h-full min-h-[300px] relative">
-                      <img src="/images/team-celebration.png" alt="Chromalox Expansion" className="absolute inset-0 w-full h-full object-cover opacity-90" />
+                      <img src="/images/chromalox-speech.jpg" alt="Roberto Potenza speaking at Chromalox Expansion" className="absolute inset-0 w-full h-full object-cover opacity-90" />
                     </div>
                   </div>
                 </Card>
