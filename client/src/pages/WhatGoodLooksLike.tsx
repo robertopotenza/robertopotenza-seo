@@ -113,7 +113,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">1. What SIOP Actually Is</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">1. What SIOP Actually Is</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p><strong>SIOP = Sales, Inventory & Operations Planning</strong></p>
                         <p>It’s a monthly, cross-functional business process that synchronizes:</p>
@@ -129,7 +129,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">2. Planning Layers & Time Horizons</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">2. Planning Layers & Time Horizons</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>You’ll want to show how SIOP sits in the planning stack:</p>
                         
@@ -163,7 +163,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-3">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">3. The Monthly SIOP Cycle – “Standard Work”</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">3. The Monthly SIOP Cycle – “Standard Work”</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-6">
                         <p>Classic S&OP has 5–6 steps; you’ll adapt it to SIOP by adding inventory explicitly.</p>
                         
@@ -217,7 +217,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-4">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">4. How SIOP Connects to Execution</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">4. How SIOP Connects to Execution</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Vertical alignment is critical:</p>
                         <ul className="list-disc pl-5 space-y-2">
@@ -232,7 +232,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-5">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">5. Roles, Governance & Cadence</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">5. Roles, Governance & Cadence</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <h4 className="font-medium text-primary">RACI-style summary:</h4>
                         <ul className="list-disc pl-5 space-y-1 text-sm">
@@ -255,7 +255,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-6">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">6. KPI Set for a “Mature” SIOP Solution</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">6. KPI Set for a “Mature” SIOP Solution</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div>
@@ -296,7 +296,7 @@ export default function WhatGoodLooksLike() {
                     </AccordionItem>
 
                     <AccordionItem value="item-7">
-                      <AccordionTrigger className="text-lg font-medium [&>svg]:order-first [&>svg]:mr-2 flex justify-end">7. Implementation Roadmap</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">7. Implementation Roadmap</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <div className="space-y-4">
                           <div>
@@ -399,7 +399,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">7 Quality Basics</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Quality Basics</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Fundamental practices that ensure consistent quality output.</p>
                         <ul className="space-y-2">
