@@ -7,7 +7,8 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Vision from "./pages/Vision";
-import Production from "./pages/Production";
+import Production from "@/pages/Production";
+import WhatGoodLooksLike from "@/pages/WhatGoodLooksLike";
 import Contact from "./pages/Contact";
 import ChromaloxCaseStudy from "./pages/ChromaloxCaseStudy";
 import Projects from "./pages/Projects";
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/experience" component={Experience} />
       <Route path="/vision" component={Vision} />
       <Route path="/production" component={Production} />
+      <Route path="/what-good-looks-like" component={WhatGoodLooksLike} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/chromalox" component={ChromaloxCaseStudy} />
       <Route path="/projects" component={Projects} />

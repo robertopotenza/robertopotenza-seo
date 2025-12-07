@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: "Projects", path: "/projects" },
     { name: "Strategic Vision", path: "/vision" },
     { name: "Production Excellence", path: "/production" },
+    { name: "What Good Looks Like", path: "/what-good-looks-like" },
     { name: "Contact", path: "/contact" },
   ];
 
