@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3 } from "lucide-react";
+import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag } from "lucide-react";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -93,7 +93,7 @@ export default function WhatGoodLooksLike() {
               </div>
             </TabsContent>
 
-            {/* New SIOP Section */}
+            {/* New SIOP Section - Full Content */}
             <TabsContent value="siop" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div className="grid md:grid-cols-12 gap-12">
                 <div className="md:col-span-4 space-y-6">
@@ -104,84 +104,212 @@ export default function WhatGoodLooksLike() {
                   <p className="text-muted-foreground">
                     The heartbeat of the business. A monthly, cross-functional process that synchronizes sales, operations, inventory strategy, and finance.
                   </p>
+                  <div className="p-4 bg-secondary/20 rounded-sm border border-border/50">
+                    <p className="text-sm italic text-muted-foreground">
+                      "SIOP sets the orchestra score; MPS and daily scheduling tell each musician what to play each day."
+                    </p>
+                  </div>
                 </div>
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">The Monthly SIOP Cycle</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Layers size={18} /> 1. What SIOP Actually Is</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>A disciplined "Standard Work" cycle to align the entire organization.</p>
-                        <div className="space-y-4">
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 1: Product & Portfolio Review</h4>
-                            <p className="text-sm">Align on what we are selling by family. Identify new products and end-of-life items.</p>
+                        <p><strong>SIOP = Sales, Inventory & Operations Planning</strong></p>
+                        <p>It’s a monthly, cross-functional business process that synchronizes:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Sales & demand</li>
+                          <li>Operations & capacity</li>
+                          <li><strong>Inventory strategy</strong></li>
+                          <li>Finance & P&L</li>
+                        </ul>
+                        <p>SIOP extends classic S&OP by making <strong>inventory a first-class citizen</strong> (explicit targets, policies, and trade-offs between service, cost, and cash).</p>
+                        <p>Think of SIOP as the <strong>heartbeat of the business</strong>: every month it decides <em>what we will sell, what we will build, what inventory we will hold, and what that means for money and capacity.</em></p>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Calendar size={18} /> 2. Planning Layers & Time Horizons</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <p>You’ll want to show how SIOP sits in the planning stack:</p>
+                        
+                        <div className="space-y-3 mt-4">
+                          <div className="border-l-2 border-primary/30 pl-4">
+                            <h4 className="font-medium text-primary">a) Strategic (12–36 months)</h4>
+                            <ul className="list-disc pl-5 text-sm mt-1">
+                              <li>Portfolio decisions, big capacity moves (buildings, major machines, automation)</li>
+                              <li>Long-term volume scenarios, geography, channels</li>
+                            </ul>
                           </div>
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 2: Demand Review</h4>
-                            <p className="text-sm">Build a consensus demand plan (3-18 months). Identify risks and opportunities.</p>
+                          
+                          <div className="border-l-2 border-primary/60 pl-4">
+                            <h4 className="font-medium text-primary">b) Tactical SIOP (3–18 months, monthly buckets)</h4>
+                            <ul className="list-disc pl-5 text-sm mt-1">
+                              <li>Family-level demand and supply</li>
+                              <li>Inventory policy & targets by family</li>
+                              <li>Medium-term labor and capacity strategy (shifts, crews, overtime bands, outsourcing)</li>
+                            </ul>
                           </div>
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 3: Supply & Capacity Review</h4>
-                            <p className="text-sm">Verify physical capability to meet demand. Identify bottlenecks and required levers (shifts, outsourcing).</p>
-                          </div>
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 4: Inventory Strategy</h4>
-                            <p className="text-sm">Set target days of supply and safety stock rules. Balance service level vs. working capital.</p>
-                          </div>
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 5: Financial Review</h4>
-                            <p className="text-sm">Ensure the plan matches P&L and cash expectations. Identify gaps vs. budget.</p>
-                          </div>
-                          <div>
-                            <h4 className="font-medium text-primary mb-2">Step 6: Executive SIOP Meeting</h4>
-                            <p className="text-sm">Approve one integrated plan. Make trade-off decisions between demand, capacity, and inventory.</p>
+                          
+                          <div className="border-l-2 border-primary pl-4">
+                            <h4 className="font-medium text-primary">c) Operational (0–12 weeks)</h4>
+                            <ul className="list-disc pl-5 text-sm mt-1">
+                              <li><strong>MPS (Master Production Schedule)</strong> at SKU/option level</li>
+                              <li>Detailed material planning (MRP), line schedules, work orders and staffing per cell</li>
+                            </ul>
                           </div>
                         </div>
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">Planning Layers & Time Horizons</AccordionTrigger>
+
+                    <AccordionItem value="item-3">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Target size={18} /> 3. The Monthly SIOP Cycle – “Standard Work”</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-6">
+                        <p>Classic S&OP has 5–6 steps; you’ll adapt it to SIOP by adding inventory explicitly.</p>
+                        
+                        <div className="space-y-4">
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 0 – Data & Assumptions Load (week 1)</h4>
+                            <p className="text-sm mt-1"><strong>Inputs:</strong> Booked orders, shipments, backlog, updated demand forecast, current inventory, capacity models, financials.</p>
+                            <p className="text-sm mt-1"><strong>Outputs:</strong> Clean data set, exception list (data gaps, outliers).</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 1 – Product & Portfolio Review</h4>
+                            <p className="text-sm mt-1"><strong>Purpose:</strong> Align on what you’re selling by family before you argue about volumes.</p>
+                            <p className="text-sm mt-1"><strong>Questions:</strong> Which models/lines are growing, flat, declining? Any new products or discontinuations? Do we need to rationalize SKUs?</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 2 – Demand Review</h4>
+                            <p className="text-sm mt-1"><strong>Purpose:</strong> Build a consensus demand plan by family, 3–18 months out.</p>
+                            <p className="text-sm mt-1"><strong>Inputs:</strong> Statistical forecast, sales intelligence, e-commerce trends.</p>
+                            <p className="text-sm mt-1"><strong>Questions:</strong> Where is demand outgrowing capacity? Which families carry the most risk?</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 3 – Supply & Capacity Review</h4>
+                            <p className="text-sm mt-1"><strong>Purpose:</strong> Check can we physically make and ship what demand is asking for?</p>
+                            <p className="text-sm mt-1"><strong>Activities:</strong> Rough-cut capacity planning, identify bottlenecks (shifts, line balancing, outsourcing).</p>
+                            <p className="text-sm mt-1"><strong>Outputs:</strong> Feasible supply plan, list of constraints + mitigation options.</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm border-l-4 border-accent">
+                            <h4 className="font-medium text-primary">Step 4 – Inventory Strategy & Target Setting (the “I” in SIOP)</h4>
+                            <p className="text-sm mt-1"><strong>Key Concept:</strong> Inventory is a strategic buffer, not just “stuff on shelves”.</p>
+                            <p className="text-sm mt-1"><strong>Activities:</strong> Set target days of supply by family, safety stock rules. Validate inventory health (turns, excess & obsolete).</p>
+                            <p className="text-sm mt-1"><strong>Outputs:</strong> Inventory policy by family, explicit stock targets.</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 5 – Financial Review</h4>
+                            <p className="text-sm mt-1"><strong>Purpose:</strong> Make sure the SIOP plan matches the P&L and cash expectations.</p>
+                            <p className="text-sm mt-1"><strong>Activities:</strong> Translate plan into revenue, margin, capex/opex. Gap analysis vs budget.</p>
+                          </div>
+
+                          <div className="bg-secondary/10 p-3 rounded-sm">
+                            <h4 className="font-medium text-primary">Step 6 – Executive SIOP Meeting</h4>
+                            <p className="text-sm mt-1"><strong>Participants:</strong> CEO, COO, Sales, Supply Chain, Finance.</p>
+                            <p className="text-sm mt-1"><strong>Purpose:</strong> Approve one integrated plan. Make decisions where demand, capacity, inventory, and profit conflict.</p>
+                          </div>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-4">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Zap size={18} /> 4. How SIOP Connects to Execution</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>SIOP sets the orchestra score; MPS and daily scheduling tell each musician what to play.</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Strategic (12-36 months):</strong> Portfolio decisions, major capacity moves.</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Tactical SIOP (3-18 months):</strong> Family-level demand/supply, inventory policy.</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Operational (0-12 weeks):</strong> MPS at SKU level, detailed MRP, daily scheduling.</li>
+                        <p>Vertical alignment is critical:</p>
+                        <ul className="list-disc pl-5 space-y-2">
+                          <li><strong>SIOP (families, monthly):</strong> Sets volume and mix envelope by family. Sets inventory and service targets.</li>
+                          <li><strong>MPS (key SKUs, weekly):</strong> Translates SIOP into SKU-level build plan. Drives capacity and material requirements in ERP.</li>
+                          <li><strong>MRP & Detailed Scheduling (daily):</strong> Explodes MPS into purchase orders, work orders, line sequences. Feeds Kanban, dispatch lists.</li>
+                        </ul>
+                        <div className="p-3 bg-primary/5 border border-primary/10 rounded-sm mt-2">
+                          <p className="font-medium text-primary">"SIOP is where we decide what we commit to. MPS is where we decide when we build it. The daily schedule is where we decide in what sequence and with which people and machines."</p>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-5">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Users size={18} /> 5. Roles, Governance & Cadence</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <h4 className="font-medium text-primary">RACI-style summary:</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li><strong>Process Owner:</strong> COO / VP Ops</li>
+                          <li><strong>Executive Sponsor:</strong> CEO/President</li>
+                          <li><strong>Demand Owner:</strong> Sales / Commercial leader</li>
+                          <li><strong>Supply Owner:</strong> Operations leader</li>
+                          <li><strong>Inventory Owner:</strong> Supply chain / planning</li>
+                          <li><strong>Financial Owner:</strong> Finance</li>
+                        </ul>
+                        
+                        <h4 className="font-medium text-primary mt-4">Cadence:</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li><strong>Week 1:</strong> Data & product review</li>
+                          <li><strong>Week 2:</strong> Demand review</li>
+                          <li><strong>Week 3:</strong> Supply & inventory review</li>
+                          <li><strong>Week 4:</strong> Financial review + Exec SIOP</li>
                         </ul>
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-3">
-                      <AccordionTrigger className="text-lg font-medium">KPI Set for Mature SIOP</AccordionTrigger>
+
+                    <AccordionItem value="item-6">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><BarChart3 size={18} /> 6. KPI Set for a “Mature” SIOP Solution</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Measuring success across four quadrants.</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div>
-                            <h4 className="font-medium text-primary mb-1">Demand</h4>
+                            <h4 className="font-medium text-primary border-b border-border pb-1 mb-2">Demand</h4>
                             <ul className="text-sm space-y-1">
-                              <li>• Forecast accuracy & bias</li>
-                              <li>• Hit rate on promotions</li>
+                              <li>• Forecast accuracy (by family, horizon)</li>
+                              <li>• Forecast bias (over/under)</li>
+                              <li>• Hit rate on promotions / big deals</li>
                             </ul>
                           </div>
                           <div>
-                            <h4 className="font-medium text-primary mb-1">Supply</h4>
+                            <h4 className="font-medium text-primary border-b border-border pb-1 mb-2">Supply & Capacity</h4>
                             <ul className="text-sm space-y-1">
-                              <li>• Capacity utilization</li>
-                              <li>• Schedule adherence</li>
+                              <li>• Capacity utilization by constrained resource</li>
+                              <li>• Plan vs actual production by family</li>
+                              <li>• Schedule adherence / plan attainment</li>
                             </ul>
                           </div>
                           <div>
-                            <h4 className="font-medium text-primary mb-1">Inventory</h4>
+                            <h4 className="font-medium text-primary border-b border-border pb-1 mb-2">Inventory</h4>
                             <ul className="text-sm space-y-1">
-                              <li>• Days of supply / Turns</li>
-                              <li>• Excess & Obsolete</li>
+                              <li>• Days of supply / turns by family</li>
+                              <li>• % SKUs within min/max policy</li>
+                              <li>• Excess & obsolete (absolute and %)</li>
+                              <li>• Stock-out frequency / backorders</li>
                             </ul>
                           </div>
                           <div>
-                            <h4 className="font-medium text-primary mb-1">Financial</h4>
+                            <h4 className="font-medium text-primary border-b border-border pb-1 mb-2">Financial</h4>
                             <ul className="text-sm space-y-1">
-                              <li>• Revenue vs. Plan</li>
-                              <li>• Gross Margin vs. Plan</li>
+                              <li>• Revenue vs plan</li>
+                              <li>• Gross margin vs plan</li>
+                              <li>• Working capital impact</li>
                             </ul>
+                          </div>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-7">
+                      <AccordionTrigger className="text-lg font-medium flex items-center gap-2"><Flag size={18} /> 7. Implementation Roadmap</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary">Phase 1 – Foundation (0–3 months)</h4>
+                            <p className="text-sm">Define scope and objectives. Pick 3–5 product families as pilot. Clean up master data. Stand up a lightweight monthly SIOP meeting.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary">Phase 2 – Stabilize & Expand (3–9 months)</h4>
+                            <p className="text-sm">Extend SIOP coverage. Tighten integration with MPS/MRP/Finance. Introduce inventory policies. Standardize the calendar and RACI.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary">Phase 3 – Mature & Optimize (9–18+ months)</h4>
+                            <p className="text-sm">Move to integrated planning layer. Add scenario planning and advanced inventory optimization. Link SIOP metrics to incentives.</p>
                           </div>
                         </div>
                       </AccordionContent>
