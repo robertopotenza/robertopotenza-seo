@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight } from "lucide-react";
+import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3 } from "lucide-react";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -31,8 +31,9 @@ export default function WhatGoodLooksLike() {
       <section className="py-16 border-t border-border/40">
         <div className="container">
           <Tabs defaultValue="people" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-12 h-auto p-1 bg-secondary/50">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-12 h-auto p-1 bg-secondary/50">
               <TabsTrigger value="people" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">People & Stability</TabsTrigger>
+              <TabsTrigger value="siop" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">SIOP</TabsTrigger>
               <TabsTrigger value="jit" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Just-In-Time</TabsTrigger>
               <TabsTrigger value="quality" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Built-In Quality</TabsTrigger>
               <TabsTrigger value="efficiency" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Efficiency</TabsTrigger>
@@ -55,7 +56,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">1.13 Mastery of Workstations</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Mastery of Workstations</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Ensuring every operator has the skills and knowledge to perform their tasks safely and correctly.</p>
                         <ul className="space-y-2">
@@ -66,7 +67,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">1.14 5S & Workplace Organization</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">5S & Workplace Organization</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>A place for everything and everything in its place. 5S is not just cleaning; it's about discipline and efficiency.</p>
                         <ul className="space-y-2">
@@ -77,7 +78,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
-                      <AccordionTrigger className="text-lg font-medium">1.05 Training Plan</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Training Plan</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Structured development paths for all employees to ensure growth and capability.</p>
                         <ul className="space-y-2">
@@ -85,6 +86,104 @@ export default function WhatGoodLooksLike() {
                           <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Gap analysis and definition of training plans</li>
                           <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> On-boarding process for new hires</li>
                         </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* New SIOP Section */}
+            <TabsContent value="siop" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <div className="grid md:grid-cols-12 gap-12">
+                <div className="md:col-span-4 space-y-6">
+                  <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
+                    <BarChart3 size={32} />
+                  </div>
+                  <h2 className="font-serif text-3xl text-primary">SIOP (Sales, Inventory & Operations Planning)</h2>
+                  <p className="text-muted-foreground">
+                    The heartbeat of the business. A monthly, cross-functional process that synchronizes sales, operations, inventory strategy, and finance.
+                  </p>
+                </div>
+                <div className="md:col-span-8">
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger className="text-lg font-medium">The Monthly SIOP Cycle</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <p>A disciplined "Standard Work" cycle to align the entire organization.</p>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 1: Product & Portfolio Review</h4>
+                            <p className="text-sm">Align on what we are selling by family. Identify new products and end-of-life items.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 2: Demand Review</h4>
+                            <p className="text-sm">Build a consensus demand plan (3-18 months). Identify risks and opportunities.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 3: Supply & Capacity Review</h4>
+                            <p className="text-sm">Verify physical capability to meet demand. Identify bottlenecks and required levers (shifts, outsourcing).</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 4: Inventory Strategy</h4>
+                            <p className="text-sm">Set target days of supply and safety stock rules. Balance service level vs. working capital.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 5: Financial Review</h4>
+                            <p className="text-sm">Ensure the plan matches P&L and cash expectations. Identify gaps vs. budget.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Step 6: Executive SIOP Meeting</h4>
+                            <p className="text-sm">Approve one integrated plan. Make trade-off decisions between demand, capacity, and inventory.</p>
+                          </div>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger className="text-lg font-medium">Planning Layers & Time Horizons</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <p>SIOP sets the orchestra score; MPS and daily scheduling tell each musician what to play.</p>
+                        <ul className="space-y-2">
+                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Strategic (12-36 months):</strong> Portfolio decisions, major capacity moves.</li>
+                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Tactical SIOP (3-18 months):</strong> Family-level demand/supply, inventory policy.</li>
+                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> <strong>Operational (0-12 weeks):</strong> MPS at SKU level, detailed MRP, daily scheduling.</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                      <AccordionTrigger className="text-lg font-medium">KPI Set for Mature SIOP</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <p>Measuring success across four quadrants.</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-1">Demand</h4>
+                            <ul className="text-sm space-y-1">
+                              <li>• Forecast accuracy & bias</li>
+                              <li>• Hit rate on promotions</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-1">Supply</h4>
+                            <ul className="text-sm space-y-1">
+                              <li>• Capacity utilization</li>
+                              <li>• Schedule adherence</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-1">Inventory</h4>
+                            <ul className="text-sm space-y-1">
+                              <li>• Days of supply / Turns</li>
+                              <li>• Excess & Obsolete</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-1">Financial</h4>
+                            <ul className="text-sm space-y-1">
+                              <li>• Revenue vs. Plan</li>
+                              <li>• Gross Margin vs. Plan</li>
+                            </ul>
+                          </div>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
@@ -108,7 +207,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">2.03 Pull Line at Takt Time</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Pull Line at Takt Time</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Production pace is synchronized with customer demand (Takt Time).</p>
                         <ul className="space-y-2">
@@ -119,7 +218,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">2.05 Pull System / Kanban</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Pull System / Kanban</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Downstream processes signal upstream processes what to produce.</p>
                         <ul className="space-y-2">
@@ -130,7 +229,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
-                      <AccordionTrigger className="text-lg font-medium">2.01 SIOP & JIT Window</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">SIOP & JIT Window</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Sales, Inventory, and Operations Planning (SIOP) aligns demand with supply.</p>
                         <ul className="space-y-2">
@@ -161,7 +260,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">3.02 Poka-Yoke (Error Proofing)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Poka-Yoke (Error Proofing)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Mechanisms that prevent mistakes from becoming defects.</p>
                         <ul className="space-y-2">
@@ -204,7 +303,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">4.02 SMED (Changeover Reduction)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">SMED (Changeover Reduction)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Single Minute Exchange of Die - reducing setup times to enable smaller batches.</p>
                         <ul className="space-y-2">
@@ -215,7 +314,7 @@ export default function WhatGoodLooksLike() {
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">4.01 OEE Structure</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">OEE Structure</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>Overall Equipment Effectiveness - the gold standard for measuring manufacturing productivity.</p>
                         <ul className="space-y-2">
@@ -246,7 +345,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">5.09 Plant Improvement Plan (PIP)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Plant Improvement Plan (PIP)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <p>A strategic roadmap for the plant's development over time.</p>
                         <ul className="space-y-2">
