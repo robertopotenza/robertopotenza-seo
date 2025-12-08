@@ -198,3 +198,11 @@ footer-watermark {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* Hide Manus runtime overlays including watermark */
+manus-content-root {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
