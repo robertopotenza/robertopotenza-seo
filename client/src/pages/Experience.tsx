@@ -118,7 +118,7 @@ export default function Experience() {
               <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-border" />
               <div>
                 <h2 className="text-2xl font-serif text-primary">General Plant Manager</h2>
-                <div className="text-lg text-muted-foreground mb-1">Forvia (Faurecia) | Columbus, IN</div>
+                <div className="text-lg text-muted-foreground mb-1">Tier 1 Automotive Supplier | Columbus, IN</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Dec 2017 – Feb 2023</div>
               </div>
               
