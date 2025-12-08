@@ -185,12 +185,12 @@ export default function Projects() {
                   </CardContent>
                 </Card>
 
-                {/* Forvia */}
+                {/* Tier 1 Automotive Supplier */}
                 <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex justify-between items-start mb-4">
                       <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Consolidation</Badge>
-                      <span className="text-sm text-muted-foreground font-mono">Forvia (Faurecia)</span>
+                      <span className="text-sm text-muted-foreground font-mono">Tier 1 Automotive Supplier</span>
                     </div>
                     <CardTitle className="font-serif text-2xl text-primary">Plant Consolidation & Launch</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
