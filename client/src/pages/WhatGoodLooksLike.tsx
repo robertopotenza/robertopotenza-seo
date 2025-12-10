@@ -15,7 +15,7 @@ export default function WhatGoodLooksLike() {
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm mb-6">
               Operational Excellence
             </div>
-            <h1 className="font-serif text-4xl md:text-6xl text-primary mb-8 leading-tight">
+            <h1 className="font-sans text-4xl md:text-6xl font-bold text-primary mb-8 leading-tight">
               What Good <br />
               <span className="text-muted-foreground">Looks Like.</span>
             </h1>
@@ -47,7 +47,7 @@ export default function WhatGoodLooksLike() {
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
                     <Users size={32} />
                   </div>
-                  <h2 className="font-serif text-3xl text-primary">People Development & Stable Conditions</h2>
+                  <h2 className="font-sans text-3xl font-bold text-primary">People Development & Stable Conditions</h2>
                   <p className="text-muted-foreground">
                     The foundation of any production system is its people. We ensure stability through rigorous training, 
                     standardized workstations, and a clean, organized environment.
@@ -100,7 +100,7 @@ export default function WhatGoodLooksLike() {
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
                     <BarChart3 size={32} />
                   </div>
-                  <h2 className="font-serif text-3xl text-primary">SIOP (Sales, Inventory & Operations Planning)</h2>
+                  <h2 className="font-sans text-3xl font-bold text-primary">SIOP (Sales, Inventory & Operations Planning)</h2>
                   <p className="text-muted-foreground">
                     The heartbeat of the business. A monthly, cross-functional process that synchronizes sales, operations, inventory strategy, and finance.
                   </p>
