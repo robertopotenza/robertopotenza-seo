@@ -12,7 +12,7 @@ export default function Experience() {
       {/* Header */}
       <section className="bg-secondary/30 py-20 border-b border-border/40">
         <div className="container">
-          <h1 className="font-serif text-4xl md:text-5xl text-primary mb-6">Professional Experience</h1>
+          <h1 className="font-sans text-4xl md:text-5xl font-bold text-primary mb-6">Professional Experience</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             A 20-year track record of transforming manufacturing operations, optimizing supply chains, and leading high-performance teams across global industries.
           </p>
@@ -25,7 +25,7 @@ export default function Experience() {
           <div className="md:col-span-4 space-y-8">
             <div className="sticky top-24">
               <div className="bg-background border border-border/40 p-6 space-y-6">
-                <h3 className="font-serif text-xl text-primary">Core Competencies</h3>
+                <h3 className="font-sans text-xl font-bold text-primary">Core Competencies</h3>
                 <div className="flex flex-wrap gap-2">
                   {["Lean Six Sigma", "Global Supply Chain", "P&L Management", "Multi-Site Operations", "Operational Excellence", "Logistics Optimization", "Strategic Planning", "Change Management"].map((skill) => (
                     <Badge key={skill} variant="secondary" className="bg-secondary text-primary hover:bg-accent hover:text-accent-foreground font-normal rounded-sm">
@@ -37,7 +37,7 @@ export default function Experience() {
                 <Separator />
                 
                 <div className="space-y-4">
-                  <h3 className="font-serif text-xl text-primary">Education</h3>
+                  <h3 className="font-sans text-xl font-bold text-primary">Education</h3>
                   <div className="space-y-3">
                     <div className="flex gap-3">
                       <GraduationCap className="w-5 h-5 text-accent shrink-0 mt-1" />
@@ -61,7 +61,7 @@ export default function Experience() {
                 <Separator />
 
                 <div className="space-y-4">
-                  <h3 className="font-serif text-xl text-primary">Certifications</h3>
+                  <h3 className="font-sans text-xl font-bold text-primary">Certifications</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-center gap-2"><Award size={14} className="text-accent" /> Lean Six Sigma Green Belt</li>
                     <li className="flex items-center gap-2"><Award size={14} className="text-accent" /> ISO 14000 / 22000</li>
@@ -79,7 +79,7 @@ export default function Experience() {
             <div className="relative pl-8 border-l border-border/40 space-y-6">
               <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-accent" />
               <div>
-                <h2 className="text-2xl font-serif text-primary">Vice President & General Manager</h2>
+                <h2 className="text-2xl font-sans font-bold text-primary">Vice President & General Manager</h2>
                 <div className="text-lg text-muted-foreground mb-1">Opal Fuels Inc. / Chromalox | Salt Lake City, UT</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Feb 2023 – Present</div>
               </div>
@@ -117,7 +117,7 @@ export default function Experience() {
             <div className="relative pl-8 border-l border-border/40 space-y-6">
               <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-border" />
               <div>
-                <h2 className="text-2xl font-serif text-primary">General Plant Manager</h2>
+                <h2 className="text-2xl font-sans font-bold text-primary">General Plant Manager</h2>
                 <div className="text-lg text-muted-foreground mb-1">Tier 1 Automotive Supplier | Columbus, IN</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Dec 2017 – Feb 2023</div>
               </div>
@@ -147,7 +147,7 @@ export default function Experience() {
             <div className="relative pl-8 border-l border-border/40 space-y-6">
               <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-border" />
               <div>
-                <h2 className="text-2xl font-serif text-primary">Vice President of Operations</h2>
+                <h2 className="text-2xl font-sans font-bold text-primary">Vice President of Operations</h2>
                 <div className="text-lg text-muted-foreground mb-1">Abengoa Bioenergy | Brazil & USA</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Jun 2008 – Oct 2017</div>
               </div>
@@ -168,7 +168,7 @@ export default function Experience() {
             <div className="relative pl-8 border-l border-border/40 space-y-6">
               <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-border" />
               <div>
-                <h2 className="text-xl font-serif text-primary">Early Career</h2>
+                <h2 className="text-xl font-sans font-bold text-primary">Early Career</h2>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">2000 – 2008</div>
               </div>
               

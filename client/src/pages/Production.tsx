@@ -49,7 +49,7 @@ export default function Production() {
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm">
               Methodology
             </div>
-            <h1 className="font-serif text-4xl md:text-6xl text-primary leading-tight">
+            <h1 className="font-sans text-4xl md:text-6xl font-bold text-primary leading-tight">
               Production <br />
               <span className="text-muted-foreground">Excellence.</span>
             </h1>
@@ -59,8 +59,8 @@ export default function Production() {
           </div>
           <div className="relative">
             <img 
-              src="/images/manufacturing-excellence.jpg" 
-              alt="Modern Manufacturing" 
+              src="/images/emerson-production-excellence.jpg" 
+              alt="Smart Factory and Industry 4.0 Connectivity" 
               className="w-full rounded-sm shadow-sm"
             />
             <div className="absolute -bottom-6 -left-6 bg-background p-6 border border-border/40 shadow-sm max-w-xs hidden md:block">
@@ -75,7 +75,7 @@ export default function Production() {
       <section className="py-20 bg-secondary/30 border-y border-border/40" id="roadmap">
         <div className="container">
           <div className="mb-12 text-center max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl text-primary mb-4">Interactive Assessment Framework</h2>
+            <h2 className="font-sans text-3xl font-bold text-primary mb-4">Interactive Assessment Framework</h2>
             <p className="text-muted-foreground">
               Explore the detailed criteria for operational excellence. Select a category below to view specific requirements.
             </p>
@@ -84,7 +84,7 @@ export default function Production() {
           <div className="grid lg:grid-cols-12 gap-8">
             {/* Category Sidebar */}
             <div className="lg:col-span-3 space-y-2">
-              <h3 className="font-serif text-lg text-primary mb-4 px-2">Categories</h3>
+              <h3 className="font-sans text-lg font-bold text-primary mb-4 px-2">Categories</h3>
               {categories.map((category) => (
                 <button
                   key={category}
@@ -104,7 +104,7 @@ export default function Production() {
             <div className="lg:col-span-9">
               <Card className="border-border/40 bg-background min-h-[600px]">
                 <CardHeader className="border-b border-border/40 bg-secondary/10">
-                  <CardTitle className="font-serif text-xl text-primary">
+                  <CardTitle className="font-sans text-xl font-bold text-primary">
                     {activeCategory || "Select a Category"}
                   </CardTitle>
                 </CardHeader>
@@ -189,14 +189,14 @@ export default function Production() {
       {/* Lean Principles */}
       <section className="py-24 bg-background">
         <div className="container">
-          <h2 className="font-serif text-3xl text-primary mb-12 text-center">Lean Principles in Action</h2>
+          <h2 className="font-sans text-3xl font-bold text-primary mb-12 text-center">Lean Principles in Action</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-4 p-6 border border-border/40 hover:border-accent/50 transition-colors">
               <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary">
                 <TrendingUp size={20} />
               </div>
-              <h3 className="font-serif text-lg text-primary">Value Stream Mapping</h3>
+              <h3 className="font-sans text-lg font-bold text-primary">Value Stream Mapping</h3>
               <p className="text-sm text-muted-foreground">
                 Visualizing the end-to-end flow to identify and eliminate non-value-added steps.
               </p>
@@ -206,7 +206,7 @@ export default function Production() {
               <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary">
                 <Clock size={20} />
               </div>
-              <h3 className="font-serif text-lg text-primary">Standardized Work</h3>
+              <h3 className="font-sans text-lg font-bold text-primary">Standardized Work</h3>
               <p className="text-sm text-muted-foreground">
                 Creating the baseline for improvement and ensuring consistency across shifts.
               </p>
@@ -216,7 +216,7 @@ export default function Production() {
               <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary">
                 <CheckCircle2 size={20} />
               </div>
-              <h3 className="font-serif text-lg text-primary">Visual Management</h3>
+              <h3 className="font-sans text-lg font-bold text-primary">Visual Management</h3>
               <p className="text-sm text-muted-foreground">
                 Making the status of the system understood at a glance by everyone.
               </p>
@@ -226,7 +226,7 @@ export default function Production() {
               <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary">
                 <Circle size={20} />
               </div>
-              <h3 className="font-serif text-lg text-primary">Gemba Walks</h3>
+              <h3 className="font-sans text-lg font-bold text-primary">Gemba Walks</h3>
               <p className="text-sm text-muted-foreground">
                 Go see, ask why, show respect. Leadership happens where the value is created.
               </p>

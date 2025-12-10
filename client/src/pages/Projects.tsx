@@ -16,7 +16,7 @@ export default function Projects() {
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm mb-6">
               Project Portfolio
             </div>
-            <h1 className="font-serif text-4xl md:text-5xl text-primary mb-6 leading-tight">
+            <h1 className="font-sans text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
               Building the Infrastructure <br />
               <span className="text-muted-foreground">of Growth.</span>
             </h1>
@@ -49,7 +49,7 @@ export default function Projects() {
                       <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">Renewable Energy</Badge>
                       <span className="text-sm text-muted-foreground font-mono">Abengoa Bioenergy</span>
                     </div>
-                    <CardTitle className="font-serif text-2xl text-primary">São João Cogeneration Plant</CardTitle>
+                    <CardTitle className="font-sans text-2xl font-bold text-primary">São João Cogeneration Plant</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <Leaf size={14} /> Biomass Cogeneration | $312M CapEx
                     </div>
@@ -82,7 +82,7 @@ export default function Projects() {
                       <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">Renewable Energy</Badge>
                       <span className="text-sm text-muted-foreground font-mono">Abengoa Bioenergy</span>
                     </div>
-                    <CardTitle className="font-serif text-2xl text-primary">Pirassununga Cogeneration Plant</CardTitle>
+                    <CardTitle className="font-sans text-2xl font-bold text-primary">Pirassununga Cogeneration Plant</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <Leaf size={14} /> Biomass Cogeneration | 70 MW
                     </div>
@@ -115,7 +115,7 @@ export default function Projects() {
                       <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Waste-to-Energy</Badge>
                       <span className="text-sm text-muted-foreground font-mono">Opal Fuels</span>
                     </div>
-                    <CardTitle className="font-serif text-2xl text-primary">Anaerobic Digester & Gas Upgrader</CardTitle>
+                    <CardTitle className="font-sans text-2xl font-bold text-primary">Anaerobic Digester & Gas Upgrader</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <Zap size={14} /> EPC Scope | Acquisition Leadership
                     </div>
@@ -141,18 +141,18 @@ export default function Projects() {
                         <span className="text-sm text-muted-foreground font-mono">Chromalox / Spirax Sarco</span>
                       </div>
                       <div>
-                        <CardTitle className="font-serif text-3xl text-primary mb-2">$58M Facility Expansion</CardTitle>
+                        <CardTitle className="font-sans text-3xl font-bold text-primary mb-2">$58M Facility Expansion</CardTitle>
                         <p className="text-muted-foreground">
                           Added 100,000 sq. ft. to existing facility with advanced manufacturing tech and geothermal systems.
                         </p>
                       </div>
                       <div className="grid grid-cols-2 gap-4">
                         <div className="bg-secondary/50 p-3 rounded-sm">
-                          <div className="text-2xl font-serif text-primary">34%</div>
+                          <div className="text-2xl font-sans font-bold text-primary">34%</div>
                           <div className="text-xs text-muted-foreground uppercase">Output Increase</div>
                         </div>
                         <div className="bg-secondary/50 p-3 rounded-sm">
-                          <div className="text-2xl font-serif text-primary">150+</div>
+                          <div className="text-2xl font-sans font-bold text-primary">150+</div>
                           <div className="text-xs text-muted-foreground uppercase">Jobs Created</div>
                         </div>
                       </div>
@@ -173,7 +173,7 @@ export default function Projects() {
                       <Badge variant="outline" className="bg-orange-50 text-orange-700 border-orange-200">Greenfield</Badge>
                       <span className="text-sm text-muted-foreground font-mono">Ahlstrom Paper</span>
                     </div>
-                    <CardTitle className="font-serif text-2xl text-primary">$37M Specialty Paper Plant</CardTitle>
+                    <CardTitle className="font-sans text-2xl font-bold text-primary">$37M Specialty Paper Plant</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <Factory size={14} /> Full Factory Build
                     </div>
@@ -192,7 +192,7 @@ export default function Projects() {
                       <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">Consolidation</Badge>
                       <span className="text-sm text-muted-foreground font-mono">Tier 1 Automotive Supplier</span>
                     </div>
-                    <CardTitle className="font-serif text-2xl text-primary">Plant Consolidation & Launch</CardTitle>
+                    <CardTitle className="font-sans text-2xl font-bold text-primary">Plant Consolidation & Launch</CardTitle>
                     <div className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <Settings size={14} /> Operational Excellence
                     </div>
