@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/">
           <a className="flex items-center space-x-2">
-            <span className="font-sans text-2xl font-bold tracking-tight text-primary">
+            <span className="font-serif text-2xl font-semibold tracking-tight text-primary">
               Roberto Potenza
             </span>
           </a>
