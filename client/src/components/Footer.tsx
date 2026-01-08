@@ -2,7 +2,7 @@ import { Linkedin, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary/30 border-t border-border/40 py-12 mt-auto">
+    <footer className="bg-secondary border-t border-border/40 py-12 mt-auto">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-4">
           <h3 className="font-serif text-xl font-semibold text-primary">Roberto Potenza</h3>
