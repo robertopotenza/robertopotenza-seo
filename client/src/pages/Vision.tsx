@@ -12,14 +12,14 @@ export default function Vision() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm mb-6">
-              Strategic Roadmap
+              Nopetro Energy
             </div>
             <h1 className="font-serif text-4xl md:text-6xl text-primary mb-8 leading-tight">
-              Scaling the Legacy of <br />
-              <span className="text-muted-foreground">Craftsmanship.</span>
+              Integrated Operations <br />
+              <span className="text-muted-foreground">Systems Strategy.</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Balanced Body has won on quality. The next frontier is building the scalable, predictable operating system that supports 30%+ growth while honoring Ken Endelman's 50-year legacy.
+              Defining and implementing a scalable, unified operations systems strategy that supports Nopetro’s rapid growth across RNG production and fuel distribution.
             </p>
           </div>
         </div>
@@ -37,16 +37,19 @@ export default function Vision() {
               />
             </div>
             <div className="space-y-8">
-              <h2 className="font-serif text-3xl text-primary">The Strategic Opportunity</h2>
+              <h2 className="font-serif text-3xl text-primary">Executive Overview</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  <strong className="text-primary">The Challenge:</strong> The entire Pilates equipment industry struggles with delivery reliability. Long lead times, unpredictable ETAs, and shipping flaws consistently undermine the customer experience.
+                  <strong className="text-primary">The Context:</strong> Nopetro Energy is at a critical inflection point, transitioning from early operational success into a phase of accelerated, multi-site scale-up across both RNG production and fueling distribution.
                 </p>
                 <p>
-                  <strong className="text-primary">The Vision:</strong> If Balanced Body becomes the first premium brand with truly premium logistics, we own the customer experience from checkout to setup.
+                  <strong className="text-primary">The Challenge:</strong> Rapid growth in both production and distribution, capital-intensive assets with tight uptime requirements, and increasing interdependency between plants, compressors, pipelines, and fueling stations.
+                </p>
+                <p>
+                  <strong className="text-primary">The Solution:</strong> A unified ERP + CMMS + predictive maintenance + Power BI architecture must be established now to enable disciplined, repeatable growth.
                 </p>
                 <blockquote className="border-l-2 border-accent pl-6 italic text-primary font-serif text-xl">
-                  "Logistics is not a cost center — it is our quality promise extended beyond the factory."
+                  "Implementing systems now flattens the complexity curve and enables controlled scale."
                 </blockquote>
               </div>
             </div>
@@ -57,7 +60,7 @@ export default function Vision() {
       {/* Strategic Pillars */}
       <section className="py-24 bg-secondary/30">
         <div className="container">
-          <h2 className="font-serif text-3xl text-center text-primary mb-16">6-Point Strategic Plan</h2>
+          <h2 className="font-serif text-3xl text-center text-primary mb-16">Strategic Pillars & Roadmap</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Pillar 1 */}
@@ -66,13 +69,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <Settings size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Predictable Operating System</CardTitle>
+                <CardTitle className="font-serif text-xl">Predictable Maintenance</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Implement full SIOP cycle</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce end-of-line surprises</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Connect production, planning & sales</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> KCF Technologies for critical assets</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce unplanned downtime 20-30%</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Institutionalize predictive maintenance</li>
                 </ul>
               </CardContent>
             </Card>
@@ -83,13 +86,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <Truck size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Global Logistics Transformation</CardTitle>
+                <CardTitle className="font-serif text-xl">Unified ERP Strategy</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Regional distribution hubs (EU, Asia, Americas)</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce lead times: Months/Weeks → Days</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> premium product – premium logistics</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 1: Odoo (cost-controlled, modular)</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 2: Microsoft Dynamics 365</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Single source of truth across divisions</li>
                 </ul>
               </CardContent>
             </Card>
@@ -100,13 +103,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <ShieldCheck size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Scalable Quality Systems</CardTitle>
+                <CardTitle className="font-serif text-xl">Power BI Control Tower</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Predictive quality dashboards</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> quality from the wood to the clients’ hands</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Protect brand reputation at scale</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Executive & Operational Dashboards</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Real-time visibility: Production to Fueling</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Mobile-ready role-based views</li>
                 </ul>
               </CardContent>
             </Card>
@@ -117,13 +120,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <Box size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Manufacturing Flow</CardTitle>
+                <CardTitle className="font-serif text-xl">Success Metrics</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Redesign flow in Sacramento</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Automate repetitive tasks, not craftsmanship</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Improve throughput without compromising craft</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Uptime ≥ 95%</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> PM Compliance ≥ 95%</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> 5-10x ROI on Predictive Maintenance</li>
                 </ul>
               </CardContent>
             </Card>
@@ -134,13 +137,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <LineChart size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Disciplined CapEx</CardTitle>
+                <CardTitle className="font-serif text-xl">Implementation Roadmap</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Prioritization matrices</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Multi-year capacity planning</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Invest in the right things at the right time</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 1-2: Assessment</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 3-4: Pilot (Vero + Stations)</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 5-8: Full Rollout</li>
                 </ul>
               </CardContent>
             </Card>
@@ -151,13 +154,13 @@ export default function Vision() {
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <Users size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Leadership & Culture</CardTitle>
+                <CardTitle className="font-serif text-xl">Strategic Value</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
                 <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Capture tribal knowledge into repeatable systems</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Honor the legacy and traditions that built Balanced Body</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Start with respect for the people who create the product</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Margin capture & Supply security</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Faster scaling & decisions</li>
+                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduced operational risk</li>
                 </ul>
               </CardContent>
             </Card>
@@ -168,22 +171,22 @@ export default function Vision() {
       {/* Why You */}
       <section className="py-24 bg-background">
         <div className="container max-w-4xl text-center">
-          <h2 className="font-serif text-3xl text-primary mb-8">Why This Fit Matters</h2>
+          <h2 className="font-serif text-3xl text-primary mb-8">Final Recommendation</h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-            Balanced Body needs a builder, not just a manager. Someone who understands that <span className="text-primary font-medium">process serves people</span>, not the other way around. My career has been defined by stabilizing fast-growing companies and professionalizing operations while respecting the unique culture that made them successful.
+            Proceed immediately with a phased, unified operations systems rollout. This approach converts Nopetro’s growth trajectory from high-risk acceleration into <span className="text-primary font-medium">disciplined, repeatable scale</span>.
           </p>
           <div className="grid grid-cols-3 gap-8 border-t border-border/40 pt-12">
             <div>
-              <div className="text-4xl font-serif text-accent mb-2">Builder</div>
-              <div className="text-sm text-muted-foreground">Mindset</div>
+              <div className="text-4xl font-serif text-accent mb-2">95%+</div>
+              <div className="text-sm text-muted-foreground">Target Uptime</div>
             </div>
             <div>
-              <div className="text-4xl font-serif text-accent mb-2">Global</div>
-              <div className="text-sm text-muted-foreground">Perspective</div>
+              <div className="text-4xl font-serif text-accent mb-2">10x</div>
+              <div className="text-sm text-muted-foreground">ROI Potential</div>
             </div>
             <div>
-              <div className="text-4xl font-serif text-accent mb-2">Belonging</div>
-              <div className="text-sm text-muted-foreground">Leadership</div>
+              <div className="text-4xl font-serif text-accent mb-2">Unified</div>
+              <div className="text-sm text-muted-foreground">Operations Platform</div>
             </div>
           </div>
         </div>
