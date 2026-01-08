@@ -24,8 +24,8 @@ export default function Home() {
               Executive Portfolio
             </div>
             <h1 className="font-serif text-5xl md:text-7xl font-medium text-primary leading-tight">
-              The System <br />
-              <span className="text-muted-foreground">Behind the Craft.</span>
+              Built Right. <br />
+              <span className="text-muted-foreground">Scaling Smart.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
               Combining 20+ years of operational excellence with a deep respect for craftsmanship. Ready to scale Balanced Body's legacy.
