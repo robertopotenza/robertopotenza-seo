@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Key Pillars */}
-      <section className="py-24 bg-secondary/30 border-y border-border/40">
+      <section className="py-24bg-secondaryorder-y border-border/40">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
