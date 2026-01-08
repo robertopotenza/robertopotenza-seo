@@ -3,14 +3,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Experience() {
   return (
     <Layout>
       {/* Header */}
-      <section className="bg-secondary/30 py-20 border-b border-border/40">
+      <section className="bg-secondary/10 py-20 border-b border-border/40">
         <div className="container">
           <h1 className="font-serif text-4xl md:text-5xl text-primary mb-6">Professional Experience</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
@@ -24,23 +24,23 @@ export default function Experience() {
           {/* Sidebar / Navigation */}
           <div className="md:col-span-4 space-y-8">
             <div className="sticky top-24">
-              <div className="bg-background border border-border/40 p-6 space-y-6">
-                <h3 className="font-serif text-xl text-primary">Core Competencies</h3>
-                <div className="flex flex-wrap gap-2">
+              <div className="bg-background border border-border/40 p-6 space-y-6 shadow-sm">
+                <h3 className="font-serif text-xl text-primary border-b border-border/40 pb-3">Core Competencies</h3>
+                <ul className="space-y-3">
                   {["Lean Six Sigma", "Global Supply Chain", "P&L Management", "Multi-Site Operations", "Operational Excellence", "Logistics Optimization", "Strategic Planning", "Change Management"].map((skill) => (
-                    <Badge key={skill} variant="secondary" className="bg-secondary text-primary hover:bg-accent hover:text-accent-foreground font-normal rounded-sm">
-                      {skill}
-                    </Badge>
+                    <li key={skill} className="flex items-center gap-3 text-primary/90">
+                      <CheckCircle2 className="w-4 h-4 text-secondary shrink-0" />
+                      <span className="text-sm font-medium">{skill}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
                 
-                <Separator />
-                
-                <div className="space-y-4">
-                  <h3 className="font-serif text-xl text-primary">Education</h3>
-                  <div className="space-y-3">
+                <div className="pt-4">
+                  <Separator className="mb-6" />
+                  <h3 className="font-serif text-xl text-primary mb-4">Education</h3>
+                  <div className="space-y-4">
                     <div className="flex gap-3">
-                      <GraduationCap className="w-5 h-5 text-accent shrink-0 mt-1" />
+                      <GraduationCap className="w-5 h-5 text-secondary shrink-0 mt-1" />
                       <div>
                         <div className="font-medium text-primary">MBA, Finance</div>
                         <div className="text-sm text-muted-foreground">Fundação Getúlio Vargas (FGV)</div>
@@ -48,7 +48,7 @@ export default function Experience() {
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <GraduationCap className="w-5 h-5 text-accent shrink-0 mt-1" />
+                      <GraduationCap className="w-5 h-5 text-secondary shrink-0 mt-1" />
                       <div>
                         <div className="font-medium text-primary">B.S., Electrical Engineering</div>
                         <div className="text-sm text-muted-foreground">University of Campinas (UNICAMP)</div>
@@ -58,14 +58,13 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <Separator />
-
-                <div className="space-y-4">
-                  <h3 className="font-serif text-xl text-primary">Certifications</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2"><Award size={14} className="text-accent" /> Lean Six Sigma Green Belt</li>
-                    <li className="flex items-center gap-2"><Award size={14} className="text-accent" /> ISO 14000 / 22000</li>
-                    <li className="flex items-center gap-2"><Award size={14} className="text-accent" /> Strategic Leadership</li>
+                <div className="pt-2">
+                  <Separator className="mb-6" />
+                  <h3 className="font-serif text-xl text-primary mb-4">Certifications</h3>
+                  <ul className="space-y-3 text-sm text-muted-foreground">
+                    <li className="flex items-center gap-2"><Award size={14} className="text-secondary" /> Lean Six Sigma Green Belt</li>
+                    <li className="flex items-center gap-2"><Award size={14} className="text-secondary" /> ISO 14000 / 22000</li>
+                    <li className="flex items-center gap-2"><Award size={14} className="text-secondary" /> Strategic Leadership</li>
                   </ul>
                 </div>
               </div>
@@ -77,7 +76,7 @@ export default function Experience() {
             
             {/* Role 1 */}
             <div className="relative pl-8 border-l border-border/40 space-y-6">
-              <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-accent" />
+              <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-secondary" />
               <div>
                 <h2 className="text-2xl font-serif text-primary">Vice President & General Manager</h2>
                 <div className="text-lg text-muted-foreground mb-1">Opal Fuels Inc. / Chromalox | Salt Lake City, UT</div>
@@ -105,7 +104,7 @@ export default function Experience() {
                 <div className="flex justify-between items-center mt-3">
                   <p className="text-xs text-muted-foreground italic">Building a culture of unity and performance ("We Are All One")</p>
                   <Link href="/case-study/chromalox">
-                    <Button variant="link" className="text-primary p-0 h-auto font-medium text-xs hover:text-accent">
+                    <Button variant="link" className="text-primary p-0 h-auto font-medium text-xs hover:text-secondary">
                       View Expansion Case Study &rarr;
                     </Button>
                   </Link>
