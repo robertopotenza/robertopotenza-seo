@@ -64,7 +64,7 @@ export default function Contact() {
             </div>
 
             {/* Image / Context */}
-            <div className="relative h-full min-h-[400px] bg-secondary/30 rounded-sm overflow-hidden border border-border/40">
+            <div className="relative h-full min-h-[400px] bg-secondary rounded-sm overflow-hidden border border-border/40">
               <img 
                 src="/images/quality-craftsmanship.jpg" 
                 alt="Craftsmanship" 

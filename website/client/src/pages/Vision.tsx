@@ -8,7 +8,7 @@ export default function Vision() {
     <Layout>
       {/* Hero */}
       <section className="relative py-24 bg-background overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/30 -skew-x-12 translate-x-1/4 z-0" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary -skew-x-12 translate-x-1/4 z-0" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm mb-6">
@@ -58,7 +58,7 @@ export default function Vision() {
       </section>
 
       {/* Strategic Pillars */}
-      <section className="py-24 bg-secondary/30">
+      <section className="py-24 bg-secondary">
         <div className="container">
           <h2 className="font-serif text-3xl text-center text-primary mb-16">Strategic Pillars & Roadmap</h2>
           

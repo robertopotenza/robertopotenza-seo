@@ -49,8 +49,8 @@
   --primary: #002F6C;
   --primary-foreground: #FFFFFF; /* White text on Navy buttons */
   
-  /* Secondary: Nopetro Yellow #FFC600 (Used for backgrounds, highlights, secondary buttons) */
-  --secondary: #FFC600;
+  /* Secondary: Nopetro Yellow #FEC600 (Used for backgrounds, highlights, secondary buttons) */
+  --secondary: #FEC600;
   --secondary-foreground: #002F6C; /* Navy text on Yellow backgrounds */
   
   /* Accent: Lighter Navy/Blue for subtle highlights */
@@ -81,19 +81,19 @@
   
   /* Chart colors */
   --chart-1: #002F6C; /* Navy */
-  --chart-2: #FFC600; /* Yellow */
+  --chart-2: #FEC600; /* Yellow */
   --chart-3: #004094; /* Light Navy */
-  --chart-4: #E6B200; /* Darker Yellow */
+  --chart-4: #FEC600; /* Darker Yellow */
   --chart-5: #335989; /* Muted Navy */
   
   --sidebar: #002F6C;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FFC600;
+  --sidebar-primary: #FEC600;
   --sidebar-primary-foreground: #002F6C;
   --sidebar-accent: #004094;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #1E4B88;
-  --sidebar-ring: #FFC600;
+  --sidebar-ring: #FEC600;
 }
 
 .dark {
@@ -101,7 +101,7 @@
   --primary: #FFFFFF; /* White text for primary in dark mode */
   --primary-foreground: #002F6C;
   
-  --secondary: #FFC600;
+  --secondary: #FEC600;
   --secondary-foreground: #002F6C;
   
   --background: #001F48; /* Deep Navy Background */
@@ -124,12 +124,12 @@
   
   --border: #1E4B88;
   --input: #1E4B88;
-  --ring: #FFC600;
+  --ring: #FEC600;
   
-  --chart-1: #FFC600;
+  --chart-1: #FEC600;
   --chart-2: #335989;
   --chart-3: #004094;
-  --chart-4: #E6B200;
+  --chart-4: #FEC600;
   --chart-5: #FFFFFF;
   
   --sidebar: #001F48;
@@ -137,7 +137,7 @@
   --sidebar-accent: #002F6C;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #1E4B88;
-  --sidebar-ring: #FFC600;
+  --sidebar-ring: #FEC600;
 }
 
 @layer base {

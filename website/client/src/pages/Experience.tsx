@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <Layout>
       {/* Header */}
-      <section className="bg-secondary/10 py-20 border-b border-border/40">
+      <section className="bg-secondary py-20 border-b border-border/40">
         <div className="container">
           <h1 className="font-serif text-4xl md:text-5xl text-primary mb-6">Professional Experience</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">

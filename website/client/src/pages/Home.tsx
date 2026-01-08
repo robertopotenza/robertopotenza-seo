@@ -24,8 +24,8 @@ export default function Home() {
               Executive Portfolio
             </div>
             <h1 className="font-serif text-5xl md:text-7xl font-medium text-primary leading-tight">
-              The System <br />
-              <span className="text-muted-foreground">Behind the Craft.</span>
+              Built Right. <br />
+              <span className="text-muted-foreground">Scaling Smart.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
               Combining 20+ years of operational excellence with a deep respect for craftsmanship. Ready to scale Balanced Body's legacy.
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Key Pillars */}
-      <section className="py-24 bg-secondary/30 border-y border-border/40">
+      <section className="py-24bg-secondaryorder-y border-border/40">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
