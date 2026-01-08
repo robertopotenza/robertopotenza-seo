@@ -156,10 +156,10 @@ export default function Production() {
                                     </div>
                                   </div>
                                   <div className="space-y-2">
-                                    <div className="text-xs font-bold text-amber-600 uppercase tracking-wider flex items-center gap-2">
+                                    <div className="text-xs font-bold text-secondary uppercase tracking-wider flex items-center gap-2">
                                       <AlertCircle size={14} /> Partially Applied
                                     </div>
-                                    <div className="text-xs text-muted-foreground bg-amber-50/50 p-3 rounded-sm border border-amber-100 h-full">
+                                    <div className="text-xs text-muted-foreground bg-secondary/5 p-3 rounded-sm border border-secondary/20 h-full">
                                       {item.partially_applied || "N/A"}
                                     </div>
                                   </div>
