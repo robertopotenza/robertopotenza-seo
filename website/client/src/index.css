@@ -43,44 +43,45 @@
 }
 
 :root {
-  /* Nopetro Brand Colors */
-  /* Primary: Nopetro Yellow #FFC600 */
-  --primary: #FFC600;
-  --primary-foreground: #002F6C; /* Navy text on yellow background */
+  /* Nopetro Brand Colors - Elegant Refinement */
   
-  /* Secondary: Nopetro Navy #002F6C */
-  --secondary: #002F6C;
-  --secondary-foreground: #FFFFFF; /* White text on navy background */
+  /* Primary: Deep Navy #002F6C (Used for text, headings, primary buttons) */
+  --primary: #002F6C;
+  --primary-foreground: #FFFFFF; /* White text on Navy buttons */
   
-  /* Accent: Lighter Navy/Blue for highlights */
+  /* Secondary: Nopetro Yellow #FFC600 (Used for backgrounds, highlights, secondary buttons) */
+  --secondary: #FFC600;
+  --secondary-foreground: #002F6C; /* Navy text on Yellow backgrounds */
+  
+  /* Accent: Lighter Navy/Blue for subtle highlights */
   --accent: #004094;
   --accent-foreground: #FFFFFF;
   
   /* Backgrounds */
   --background: #FFFFFF;
-  --foreground: #002F6C; /* Navy text as default */
+  --foreground: #002F6C; /* Default text is Navy */
   
-  --card: #F8F9FA;
+  --card: #F8F9FA; /* Very light gray for cards */
   --card-foreground: #002F6C;
   
   --popover: #FFFFFF;
   --popover-foreground: #002F6C;
   
   --muted: #F1F5F9;
-  --muted-foreground: #64748B;
+  --muted-foreground: #475569; /* Slate gray for muted text */
   
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   
   --border: #E2E8F0;
   --input: #E2E8F0;
-  --ring: #FFC600;
+  --ring: #002F6C; /* Focus ring is Navy */
   
-  --radius: 0rem; /* Squared edges as per preference */
+  --radius: 0rem; /* Squared edges */
   
-  /* Chart colors - Adapted to Nopetro Palette */
-  --chart-1: #FFC600; /* Yellow */
-  --chart-2: #002F6C; /* Navy */
+  /* Chart colors */
+  --chart-1: #002F6C; /* Navy */
+  --chart-2: #FFC600; /* Yellow */
   --chart-3: #004094; /* Light Navy */
   --chart-4: #E6B200; /* Darker Yellow */
   --chart-5: #335989; /* Muted Navy */
@@ -96,15 +97,15 @@
 }
 
 .dark {
-  /* Dark Mode - Inverted Nopetro Scheme */
-  --primary: #FFC600;
+  /* Dark Mode - Elegant Navy Theme */
+  --primary: #FFFFFF; /* White text for primary in dark mode */
   --primary-foreground: #002F6C;
   
-  --secondary: #FFFFFF;
+  --secondary: #FFC600;
   --secondary-foreground: #002F6C;
   
-  --background: #001F48; /* Darker Navy for background */
-  --foreground: #FFFFFF;
+  --background: #001F48; /* Deep Navy Background */
+  --foreground: #FFFFFF; /* White text */
   
   --card: #002F6C;
   --card-foreground: #FFFFFF;
@@ -113,7 +114,7 @@
   --popover-foreground: #FFFFFF;
   
   --muted: #004094;
-  --muted-foreground: #94A3B8;
+  --muted-foreground: #CBD5E1; /* Light gray for muted text */
   
   --accent: #004094;
   --accent-foreground: #FFFFFF;
@@ -160,24 +161,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -188,19 +176,20 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
+
 /* Hide Manus branding watermark */
 footer-watermark {
   display: none !important;
