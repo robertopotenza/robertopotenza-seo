@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-muted-foreground">Scaling Smart.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Combining 20+ years of operational excellence with a deep respect for craftsmanship. Ready to scale Balanced Body's legacy.
+              Bringing 20+ years of operational excellence to build system-driven, predictive energy operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/vision">
@@ -59,64 +59,127 @@ export default function Home() {
             </div>
             <div className="md:col-span-8 space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Balanced Body stands at a unique intersection of tradition and growth. 
-                As a leader, I don't just manage operations; I build the systems that allow craftsmanship to scale without compromise.
+                Nopetro is entering a critical growth phase—expanding RNG production assets while scaling a rapidly growing fueling network. This growth brings complexity that cannot be managed with fragmented tools, spreadsheets, or reactive maintenance.
               </p>
               <p>
-                My approach combines Lean Six Sigma discipline with a human-centric leadership style, ensuring that as we grow, we remain true to the values that define the brand.
+                The vision is to establish a unified operations systems architecture that enables disciplined scale, protects uptime, and gives leadership real-time visibility across production, maintenance, and distribution.
+              </p>
+              <p className="font-medium text-primary">
+                This is not an IT project. It is an operational control system designed to support predictable growth.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Pillars */}
-      <section className="py-24bg-secondaryorder-y border-border/40">
+      {/* Strategic Content */}
+      <section className="py-24 bg-secondary border-y border-border/40">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
-              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <Layers size={24} />
-              </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Scalable Systems</h3>
-              <p className="text-muted-foreground mb-6">
-                Building predictable operating systems that eliminate bottlenecks and stabilize production flow.
+          <div className="grid md:grid-cols-2 gap-16">
+            {/* Left Column: The Problem */}
+            <div className="space-y-8">
+              <h3 className="font-serif text-2xl text-primary">Operational complexity does not grow linearly.</h3>
+              <p className="text-lg text-muted-foreground">
+                As assets multiply, risk accelerates:
               </p>
-              <Link href="/production">
-                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
-                  See Roadmap <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Link>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
+                  <span className="text-muted-foreground">More production facilities</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
+                  <span className="text-muted-foreground">More critical rotating equipment</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
+                  <span className="text-muted-foreground">More interdependency between plants, compressors, pipelines, and fueling stations</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
+                  <span className="text-muted-foreground">Higher capital exposure and uptime sensitivity</span>
+                </li>
+              </ul>
+              
+              <div className="bg-background/50 p-6 rounded-sm border-l-4 border-primary">
+                <p className="text-primary font-medium mb-4">Waiting to systematize until later creates:</p>
+                <div className="grid grid-cols-2 gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2"><Target size={16} /> Data silos</div>
+                  <div className="flex items-center gap-2"><Zap size={16} /> Reactive firefighting</div>
+                  <div className="flex items-center gap-2"><ShieldCheck size={16} /> Executive blind spots</div>
+                  <div className="flex items-center gap-2"><BarChart3 size={16} /> Higher long-term cost</div>
+                </div>
+              </div>
+              
+              <p className="text-lg font-medium text-primary">
+                Implementing unified systems early flattens the complexity curve and enables repeatable, low-risk expansion.
+              </p>
             </div>
 
-            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
-              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <Globe size={24} />
-              </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Global Logistics</h3>
-              <p className="text-muted-foreground mb-6">
-                Transforming delivery into a competitive moat with regional hubs and 3PL networks.
+            {/* Right Column: The Solution */}
+            <div className="space-y-8">
+              <h3 className="font-serif text-2xl text-primary">Information Management Objectives</h3>
+              <p className="text-lg text-muted-foreground">
+                The operations systems strategy is built around four core needs:
               </p>
-              <Link href="/vision">
-                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
-                  View Strategy <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Link>
+              
+              <div className="grid gap-6">
+                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
+                  <h4 className="font-medium text-primary mb-2">Single Source of Truth</h4>
+                  <p className="text-sm text-muted-foreground">One consistent view of production, maintenance, cost, and performance across all sites.</p>
+                </div>
+                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
+                  <h4 className="font-medium text-primary mb-2">Predictive, Not Reactive, Maintenance</h4>
+                  <p className="text-sm text-muted-foreground">Shift from breakdown response to condition-based and predictive maintenance on critical assets.</p>
+                </div>
+                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
+                  <h4 className="font-medium text-primary mb-2">Real-Time Operational Visibility</h4>
+                  <p className="text-sm text-muted-foreground">Executives and operators see the same facts, updated continuously, with role-based dashboards.</p>
+                </div>
+                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
+                  <h4 className="font-medium text-primary mb-2">Scalable by Design</h4>
+                  <p className="text-sm text-muted-foreground">Systems and templates that deploy quickly to new facilities without reinventing processes.</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
-              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <ShieldCheck size={24} />
+          {/* Bottom Section: Outcomes */}
+          <div className="mt-16 pt-16 border-t border-border/40">
+            <div className="grid md:grid-cols-12 gap-12">
+              <div className="md:col-span-4">
+                <h3 className="font-serif text-2xl text-primary mb-4">What the Unified Platform Delivers</h3>
+                <p className="text-muted-foreground">
+                  A fully integrated ERP, CMMS, predictive maintenance, and BI layer enables:
+                </p>
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Quality & Culture</h3>
-              <p className="text-muted-foreground mb-6">
-                Elevating quality systems while strengthening the culture of craftsmanship and community.
-              </p>
-              <Link href="/experience">
-                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
-                  My Background <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Link>
+              <div className="md:col-span-8">
+                <div className="grid sm:grid-cols-2 gap-8 mb-12">
+                  <div className="flex gap-4">
+                    <div className="text-4xl font-light text-primary">95%</div>
+                    <div className="text-sm text-muted-foreground pt-2">Target production uptime reliability</div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-4xl font-light text-primary">30%</div>
+                    <div className="text-sm text-muted-foreground pt-2">Reduction in unplanned downtime</div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-4xl font-light text-primary">10+</div>
+                    <div className="text-sm text-muted-foreground pt-2">Scalable to multiple facilities</div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-4xl font-light text-primary">$$$</div>
+                    <div className="text-sm text-muted-foreground pt-2">Lower O&M cost per facility</div>
+                  </div>
+                </div>
+                
+                <div className="bg-primary text-primary-foreground p-8 rounded-sm">
+                  <h4 className="font-serif text-xl mb-4 text-accent">Strategic Outcome</h4>
+                  <p className="text-lg leading-relaxed opacity-90">
+                    The result is an operations platform that turns growth from a risk into a competitive advantage. Instead of scaling chaos, Nopetro scales discipline, visibility, and reliability—protecting capital, supporting teams, and enabling leadership to manage the business with confidence as asset count grows.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
