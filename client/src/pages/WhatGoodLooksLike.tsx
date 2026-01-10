@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag } from "lucide-react";
+import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench } from "lucide-react";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -35,7 +35,7 @@ export default function WhatGoodLooksLike() {
               <TabsTrigger value="people" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">People & Stability</TabsTrigger>
               <TabsTrigger value="siop" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">SIOP</TabsTrigger>
               <TabsTrigger value="site-management" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Site Management</TabsTrigger>
-              <TabsTrigger value="quality" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Built-In Quality</TabsTrigger>
+              <TabsTrigger value="reliability" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Reliability System</TabsTrigger>
               <TabsTrigger value="efficiency" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Efficiency</TabsTrigger>
               <TabsTrigger value="improvement" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Improvement</TabsTrigger>
             </TabsList>
@@ -395,30 +395,64 @@ export default function WhatGoodLooksLike() {
               </div>
             </TabsContent>
 
-            {/* 3. Built-In Quality */}
-            <TabsContent value="quality" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* 3. Reliability System */}
+            <TabsContent value="reliability" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div className="grid md:grid-cols-12 gap-12">
                 <div className="md:col-span-4 space-y-6">
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
-                    <ShieldCheck size={32} />
+                    <Wrench size={32} />
                   </div>
-                  <h2 className="font-serif text-3xl text-primary">Built-In Quality</h2>
+                  <h2 className="font-serif text-3xl text-primary">Reliability System</h2>
                   <p className="text-muted-foreground">
-                    Quality is not inspected in; it is built in. We use Poka-Yoke and rigorous standards 
-                    to prevent defects from ever passing to the next station.
+                    Ensuring equipment and facilities are maintained to the highest standards. A robust system of TPM and planned maintenance guarantees uptime and operational stability.
                   </p>
                 </div>
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">Poka-Yoke (Error Proofing)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">TPM (Total Productive Maintenance)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Mechanisms that prevent mistakes from becoming defects.</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Best Poka-Yoke is a design Poka-Yoke (full proof)</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Simple, cheap, reliable, and no added work</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Systematically tested every shift</li>
-                        </ul>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>Equipment/line facilities regularly maintained. Accurate priority list executed. Equipment/tooling clean. PM levels 1&2 by operator/Team Leader. Performance/issues monitored. OEE tracked for capacity equipment. Pareto of losses. Analysis/corrective actions for poor performers.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <p>Review PM levels 1&2 planning/instructions/records. Verify OEE losses tracked with codes/comments. Ask Production Managers about underperforming processes, Pareto, actions, impact.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 1&2: carried out as per plan on 75-100% of equipment, with work instructions.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> OEE losses tracked with code ID/comments. For digital: all stoppages classified by end of hour.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> At least one underperforming equipment/line meets criteria: monthly Pareto non-OEE losses, top problems via Pareto of Pareto, actions defined, impact monitored.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger className="text-lg font-medium">Maintenance System</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>Equipment/mechanical rooms regularly maintained. Complete site equipment list. Clean equipment/tooling. PM levels 3,4,5 planning. Abnormalities recorded (red labels) and addressed. Spare parts storage managed (physical/system).</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <p>Review PM levels 3-5 planning/instructions with maintenance. Ensure unperformed PM known/tracked. Record abnormalities. Cycle count spare parts yearly + action plan. Check two spare parts (system vs physical).</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 3,4&5: plan for 85-100% equipment, completion &gt;75% (past 3 months), unperformed replanned, tasks/instructions available.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Abnormalities recorded (labels/orders), planned, addressed (small delays acceptable).</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Spare Parts: cycle count followed, action plan for discrepancies, inventory matches physical ±5%.</li>
+                            </ul>
+                          </div>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
