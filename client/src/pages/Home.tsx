@@ -80,9 +80,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Layers size={24} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Scalable Systems</h3>
+              <h3 className="font-serif text-xl text-primary mb-3">Disciplined Systems for Growth</h3>
               <p className="text-muted-foreground mb-6">
-                Building predictable operating systems that eliminate bottlenecks and stabilize production flow.
+                Implementing unified operations systems that control risk, protect capital, and support repeatable expansion.
               </p>
               <Link href="/production">
                 <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
