@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag } from "lucide-react";
+import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench } from "lucide-react";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -15,7 +15,7 @@ export default function WhatGoodLooksLike() {
             <div className="inline-block px-3 py-1 border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-widest uppercase rounded-sm mb-6">
               Operational Excellence
             </div>
-            <h1 className="font-sans text-4xl md:text-6xl font-bold text-primary mb-8 leading-tight">
+            <h1 className="font-serif text-4xl md:text-6xl text-primary mb-8 leading-tight">
               What Good <br />
               <span className="text-muted-foreground">Looks Like.</span>
             </h1>
@@ -34,8 +34,8 @@ export default function WhatGoodLooksLike() {
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-12 h-auto p-1 bg-secondary/50">
               <TabsTrigger value="people" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">People & Stability</TabsTrigger>
               <TabsTrigger value="siop" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">SIOP</TabsTrigger>
-              <TabsTrigger value="jit" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Just-In-Time</TabsTrigger>
-              <TabsTrigger value="quality" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Built-In Quality</TabsTrigger>
+              <TabsTrigger value="site-management" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Site Management</TabsTrigger>
+              <TabsTrigger value="reliability" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Reliability System</TabsTrigger>
               <TabsTrigger value="efficiency" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Efficiency</TabsTrigger>
               <TabsTrigger value="improvement" className="py-3 data-[state=active]:bg-background data-[state=active]:shadow-sm">Improvement</TabsTrigger>
             </TabsList>
@@ -47,7 +47,7 @@ export default function WhatGoodLooksLike() {
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
                     <Users size={32} />
                   </div>
-                  <h2 className="font-sans text-3xl font-bold text-primary">People Development & Stable Conditions</h2>
+                  <h2 className="font-serif text-3xl text-primary">People Development & Stable Conditions</h2>
                   <p className="text-muted-foreground">
                     The foundation of any production system is its people. We ensure stability through rigorous training, 
                     standardized workstations, and a clean, organized environment.
@@ -100,7 +100,7 @@ export default function WhatGoodLooksLike() {
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
                     <BarChart3 size={32} />
                   </div>
-                  <h2 className="font-sans text-3xl font-bold text-primary">SIOP (Sales, Inventory & Operations Planning)</h2>
+                  <h2 className="font-serif text-3xl text-primary">SIOP (Sales, Inventory & Operations Planning)</h2>
                   <p className="text-muted-foreground">
                     The heartbeat of the business. A monthly, cross-functional process that synchronizes sales, operations, inventory strategy, and finance.
                   </p>
@@ -319,52 +319,75 @@ export default function WhatGoodLooksLike() {
               </div>
             </TabsContent>
 
-            {/* 2. Just-In-Time */}
-            <TabsContent value="jit" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* 2. Site Management */}
+            <TabsContent value="site-management" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div className="grid md:grid-cols-12 gap-12">
                 <div className="md:col-span-4 space-y-6">
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
-                    <Clock size={32} />
+                    <Flag size={32} />
                   </div>
-                  <h2 className="font-serif text-3xl text-primary">Just-In-Time (JIT)</h2>
+                  <h2 className="font-serif text-3xl text-primary">Site Management</h2>
                   <p className="text-muted-foreground">
-                    Producing only what is needed, when it is needed, and in the amount needed. 
-                    We control production through Takt Time and Pull Systems.
+                    The SIP formalizes the site's vision, improvement priorities, and the roadmap to achieve them. A gap analysis must be conducted for the next 18 months. The SIP is a dynamic leadership tool.
                   </p>
                 </div>
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">Pull Line at Takt Time</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Site Improvement Plan (SIP)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Production pace is synchronized with customer demand (Takt Time).</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Takt time is the metronome of the production system</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Resources aligned with speed - not more, not less</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Avoid changing takt time to recover delays</li>
-                        </ul>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>The SIP formalizes the site's vision, improvement priorities, and the roadmap to achieve them. A gap analysis must be conducted for the next 18 months. The SIP is a dynamic leadership tool.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <p>Interview the Site Head to review the SIP. Select the leaders responsible for any macro activities and interview them. Review the management routines and reviews related to the SIP.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> The midterm vision, including key objectives, is defined in collaboration with the Sub Region Head.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> For the next 18 months, the site has identified: Top priorities based on a gap analysis; Macro activities and roadmap; Top priorities managed daily.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> The site management team is engaged in the creation and review of the SIP, with monthly reviews for macro activities and semi-annual reviews for priorities.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> The output KPIs selected for daily management priorities in the SIP are tracked and reviewed daily during the site-level accountability meetings.</li>
+                            </ul>
+                          </div>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger className="text-lg font-medium">Pull System / Kanban</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Control Points Management</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Downstream processes signal upstream processes what to produce.</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Kanban loops give appropriate signals</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Shop stock associated with information flow</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Regular Kanban label audits</li>
-                        </ul>
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                      <AccordionTrigger className="text-lg font-medium">SIOP & JIT Window</AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Sales, Inventory, and Operations Planning (SIOP) aligns demand with supply.</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> JIT Window analysis for sequenced orders</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Comparison of customer flow vs. internal capability</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Detailed calculation of available JIT Window</li>
-                        </ul>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>To ensure that any critical deviation is detected promptly and the appropriate corrective action is taken to bring performance back to standard at the right organizational level. It is essential to consistently monitor that critical points are being managed effectively.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Live Process Observation: Site Tour with the Site Manager, interviews with Operations Manager/PC&L Manager/Supervisors.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Request the Site Head to provide the data supporting the control points.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Interview individuals involved in control points to assess their understanding.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> During the tour, managers check current status of each control point.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Face-to-face meetings between Managers and N-1 to align on status.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Input KPIs under management control are monitored and showcased during Site/Department/Line daily accountability meetings.</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Site tours are formalized and conducted by the Site Head, Operations Manager, PC&L Manager, and Supervisors.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Input KPIs (control points) included in the Site tours are selected based on data analysis.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Control points are defined with clear OK/NG standards, visual management tools, and reaction/escalation rules.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> During the tour, managers check current status of each control point.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Face-to-face meetings held between Managers and N-1 to align on status, reaction rules, and actions.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Most Input KPIs under management control are tracked and displayed in relevant daily accountability meetings.</li>
+                            </ul>
+                          </div>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
@@ -372,30 +395,64 @@ export default function WhatGoodLooksLike() {
               </div>
             </TabsContent>
 
-            {/* 3. Built-In Quality */}
-            <TabsContent value="quality" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* 3. Reliability System */}
+            <TabsContent value="reliability" className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div className="grid md:grid-cols-12 gap-12">
                 <div className="md:col-span-4 space-y-6">
                   <div className="w-16 h-16 bg-secondary rounded-sm flex items-center justify-center text-primary mb-4">
-                    <ShieldCheck size={32} />
+                    <Wrench size={32} />
                   </div>
-                  <h2 className="font-serif text-3xl text-primary">Built-In Quality</h2>
+                  <h2 className="font-serif text-3xl text-primary">Reliability System</h2>
                   <p className="text-muted-foreground">
-                    Quality is not inspected in; it is built in. We use Poka-Yoke and rigorous standards 
-                    to prevent defects from ever passing to the next station.
+                    Ensuring equipment and facilities are maintained to the highest standards. A robust system of TPM and planned maintenance guarantees uptime and operational stability.
                   </p>
                 </div>
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">Poka-Yoke (Error Proofing)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">TPM (Total Productive Maintenance)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
-                        <p>Mechanisms that prevent mistakes from becoming defects.</p>
-                        <ul className="space-y-2">
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Best Poka-Yoke is a design Poka-Yoke (full proof)</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Simple, cheap, reliable, and no added work</li>
-                          <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent" /> Systematically tested every shift</li>
-                        </ul>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>Equipment/line facilities regularly maintained. Accurate priority list executed. Equipment/tooling clean. PM levels 1&2 by operator/Team Leader. Performance/issues monitored. OEE tracked for capacity equipment. Pareto of losses. Analysis/corrective actions for poor performers.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <p>Review PM levels 1&2 planning/instructions/records. Verify OEE losses tracked with codes/comments. Ask Production Managers about underperforming processes, Pareto, actions, impact.</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 1&2: carried out as per plan on 75-100% of equipment, with work instructions.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> OEE losses tracked with code ID/comments. For digital: all stoppages classified by end of hour.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> At least one underperforming equipment/line meets criteria: monthly Pareto non-OEE losses, top problems via Pareto of Pareto, actions defined, impact monitored.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                      <AccordionTrigger className="text-lg font-medium">Maintenance System</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground space-y-4">
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Expectation</h4>
+                            <p>Equipment/mechanical rooms regularly maintained. Complete site equipment list. Clean equipment/tooling. PM levels 3,4,5 planning. Abnormalities recorded (red labels) and addressed. Spare parts storage managed (physical/system).</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">How to evaluate</h4>
+                            <p>Review PM levels 3-5 planning/instructions with maintenance. Ensure unperformed PM known/tracked. Record abnormalities. Cycle count spare parts yearly + action plan. Check two spare parts (system vs physical).</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-primary mb-2">Fully applied</h4>
+                            <ul className="space-y-2">
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 3,4&5: plan for 85-100% equipment, completion &gt;75% (past 3 months), unperformed replanned, tasks/instructions available.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Abnormalities recorded (labels/orders), planned, addressed (small delays acceptable).</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Spare Parts: cycle count followed, action plan for discrepancies, inventory matches physical ±5%.</li>
+                            </ul>
+                          </div>
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
