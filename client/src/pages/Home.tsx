@@ -11,8 +11,8 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/banner.png" 
-            alt="Nopetro RNG Operations" 
+            src="/images/hero-bg.jpg" 
+            alt="Craftsmanship detail" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-muted-foreground">Scaling Smart.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Bringing 20+ years of operational excellence to build system-driven, predictive energy operations.
+              Combining 20+ years of operational excellence with a deep respect for craftsmanship. Ready to scale Balanced Body's legacy.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/vision">
@@ -59,65 +59,64 @@ export default function Home() {
             </div>
             <div className="md:col-span-8 space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Nopetro is entering a critical growth phase—expanding RNG production assets while scaling a rapidly growing fueling network. This growth brings complexity that cannot be managed with fragmented tools, spreadsheets, or reactive maintenance.
+                Balanced Body stands at a unique intersection of tradition and growth. 
+                As a leader, I don't just manage operations; I build the systems that allow craftsmanship to scale without compromise.
               </p>
               <p>
-                The vision is to establish a unified operations systems architecture that enables disciplined scale, protects uptime, and gives leadership real-time visibility across production, maintenance, and distribution.
-              </p>
-              <p>
-                This is not an IT project. It is an operational control system designed to support predictable growth.
+                My approach combines Lean Six Sigma discipline with a human-centric leadership style, ensuring that as we grow, we remain true to the values that define the brand.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Pillars - Updated with Nopetro Content and 4th Box */}
-      <section className="py-24 bg-secondary border-y border-border/40">
+      {/* Key Pillars */}
+      <section className="py-24bg-secondaryorder-y border-border/40">
         <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Box 1: Single Source of Truth */}
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Layers size={24} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Single Source of Truth</h3>
+              <h3 className="font-serif text-xl text-primary mb-3">Scalable Systems</h3>
               <p className="text-muted-foreground mb-6">
-                One consistent view of production, maintenance, cost, and performance across all sites.
+                Building predictable operating systems that eliminate bottlenecks and stabilize production flow.
               </p>
+              <Link href="/production">
+                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
+                  See Roadmap <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Link>
             </div>
 
-            {/* Box 2: Predictive Maintenance */}
-            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
-              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <Zap size={24} />
-              </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Predictive Maintenance</h3>
-              <p className="text-muted-foreground mb-6">
-                Shift from breakdown response to condition-based and predictive maintenance on critical assets.
-              </p>
-            </div>
-
-            {/* Box 3: Real-Time Visibility */}
-            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
-              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <BarChart3 size={24} />
-              </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Real-Time Visibility</h3>
-              <p className="text-muted-foreground mb-6">
-                Executives and operators see the same facts, updated continuously, with role-based dashboards.
-              </p>
-            </div>
-
-            {/* Box 4: Scalable by Design */}
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Globe size={24} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Scalable by Design</h3>
+              <h3 className="font-serif text-xl text-primary mb-3">Global Logistics</h3>
               <p className="text-muted-foreground mb-6">
-                Systems and templates that deploy quickly to new facilities without reinventing processes.
+                Transforming delivery into a competitive moat with regional hubs and 3PL networks.
               </p>
+              <Link href="/vision">
+                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
+                  View Strategy <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Link>
+            </div>
+
+            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
+              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <ShieldCheck size={24} />
+              </div>
+              <h3 className="font-serif text-xl text-primary mb-3">Quality & Culture</h3>
+              <p className="text-muted-foreground mb-6">
+                Elevating quality systems while strengthening the culture of craftsmanship and community.
+              </p>
+              <Link href="/experience">
+                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
+                  My Background <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -126,39 +125,39 @@ export default function Home() {
       {/* Testimonials */}
       <Testimonials />
 
-      {/* Call to Action - Updated Metrics */}
+      {/* Call to Action */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">95%</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Target Uptime</div>
+              <div className="text-5xl font-serif font-light text-accent">20+</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Years Experience</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">30%</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Downtime Reduction</div>
+              <div className="text-5xl font-serif font-light text-accent">74%</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">OEE Achievement</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">10+</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Scalable Facilities</div>
+              <div className="text-5xl font-serif font-light text-accent">$1B+</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">P&L Responsibility</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">$$$</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Lower O&M Cost</div>
+              <div className="text-5xl font-serif font-light text-accent">34%</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Output Increase</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quote Section - Updated with Strategic Outcome */}
+      {/* Quote Section */}
       <section className="py-32 bg-background flex items-center justify-center">
         <div className="container max-w-4xl text-center space-y-8">
-          <blockquote className="font-serif text-2xl md:text-3xl text-primary leading-tight italic">
-            "Instead of scaling chaos, Nopetro scales discipline, visibility, and reliability—protecting capital, supporting teams, and enabling leadership to manage the business with confidence as asset count grows."
+          <blockquote className="font-serif text-3xl md:text-4xl text-primary leading-tight italic">
+            "We're not doing that for the title, we're doing that because that's the right thing to do."
           </blockquote>
           <div className="flex flex-col items-center gap-2">
-            <cite className="not-italic font-medium text-primary">Strategic Outcome</cite>
-            <span className="text-sm text-muted-foreground">Turning growth into competitive advantage</span>
+            <cite className="not-italic font-medium text-primary">Roberto Potenza</cite>
+            <span className="text-sm text-muted-foreground">On Sustainability & Leadership</span>
           </div>
         </div>
       </section>
