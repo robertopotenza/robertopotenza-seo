@@ -59,11 +59,13 @@ export default function Home() {
             </div>
             <div className="md:col-span-8 space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Balanced Body stands at a unique intersection of tradition and growth. 
-                As a leader, I don't just manage operations; I build the systems that allow craftsmanship to scale without compromise.
+                Nopetro is entering a critical growth phase—expanding RNG production assets while scaling a rapidly growing fueling network. This growth brings complexity that cannot be managed with fragmented tools, spreadsheets, or reactive maintenance.
               </p>
               <p>
-                My approach combines Lean Six Sigma discipline with a human-centric leadership style, ensuring that as we grow, we remain true to the values that define the brand.
+                The vision is to establish a unified operations systems architecture that enables disciplined scale, protects uptime, and gives leadership real-time visibility across production, maintenance, and distribution.
+              </p>
+              <p>
+                This is not IT. This is operational control—designed to standardize execution, impose discipline, and enable predictable scale.
               </p>
             </div>
           </div>
