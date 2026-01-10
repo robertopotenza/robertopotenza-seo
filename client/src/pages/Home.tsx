@@ -95,15 +95,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Globe size={24} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Global Logistics</h3>
+              <h3 className="font-serif text-xl text-primary mb-3">Operations Control Tower</h3>
               <p className="text-muted-foreground mb-6">
-                Transforming delivery into a competitive moat with regional hubs and 3PL networks.
+                Integrated ERP, CMMS, and Analytics Across Vertically Integrated Operations
               </p>
-              <Link href="/vision">
-                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
-                  View Strategy <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Link>
             </div>
 
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
