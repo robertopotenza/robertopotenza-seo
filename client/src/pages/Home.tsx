@@ -99,6 +99,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6">
                 Integrated ERP, CMMS, and Analytics Across Vertically Integrated Operations
               </p>
+              <Link href="/vision">
+                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
+                  View Strategy <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Link>
             </div>
 
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
