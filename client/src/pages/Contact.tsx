@@ -14,9 +14,9 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h1 className="font-sans text-4xl font-bold text-primary mb-4">Let's Connect</h1>
+                <h1 className="font-serif text-4xl text-primary mb-4">Let's Connect</h1>
                 <p className="text-lg text-muted-foreground">
-                  I welcome the opportunity to discuss how my operational experience aligns with Emerson's strategic goals.
+                  I welcome the opportunity to discuss how my operational experience aligns with Balanced Body's strategic goals.
                 </p>
               </div>
 
@@ -64,14 +64,14 @@ export default function Contact() {
             </div>
 
             {/* Image / Context */}
-            <div className="relative h-full min-h-[400px] bg-secondary/30 rounded-sm overflow-hidden border border-border/40">
+            <div className="relative h-full min-h-[400px] bg-secondary rounded-sm overflow-hidden border border-border/40">
               <img 
-                src="/images/emerson-contact-bg.png" 
-                alt="Smart Energy and Connectivity" 
+                src="/images/quality-craftsmanship.jpg" 
+                alt="Craftsmanship" 
                 className="absolute inset-0 w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-background/90 to-transparent">
-                <blockquote className="font-sans text-xl font-bold text-primary italic">
+                <blockquote className="font-serif text-xl text-primary italic">
                   "Quality is not an act, it is a habit."
                 </blockquote>
                 <div className="text-sm text-muted-foreground mt-2">— Aristotle</div>
