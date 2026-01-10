@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-muted-foreground">Scaling Smart.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Combining 20+ years of operational excellence with a deep respect for craftsmanship. Ready to scale Balanced Body's legacy.
+              Bringing 20+ years of operational excellence to build system-driven, predictive energy operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/vision">
