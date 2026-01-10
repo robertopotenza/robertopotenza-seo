@@ -59,8 +59,8 @@ export default function Production() {
           </div>
           <div className="relative">
             <img 
-              src="/images/manufacturing-excellence.jpg" 
-              alt="Modern Manufacturing" 
+              src="/images/jorge-herrera.png" 
+              alt="Jorge Herrera, CEO Nopetro" 
               className="w-full rounded-sm shadow-sm"
             />
             <div className="absolute -bottom-6 -left-6 bg-background p-6 border border-border/40 shadow-sm max-w-xs hidden md:block">
