@@ -72,75 +72,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Content */}
+      {/* Strategic Content - Card Grid Layout */}
       <section className="py-24 bg-secondary border-y border-border/40">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-16">
-            {/* Left Column: The Problem */}
-            <div className="space-y-8">
-              <h3 className="font-serif text-2xl text-primary">Operational complexity does not grow linearly.</h3>
-              <p className="text-lg text-muted-foreground">
-                As assets multiply, risk accelerates:
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
-                  <span className="text-muted-foreground">More production facilities</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
-                  <span className="text-muted-foreground">More critical rotating equipment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
-                  <span className="text-muted-foreground">More interdependency between plants, compressors, pipelines, and fueling stations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5" />
-                  <span className="text-muted-foreground">Higher capital exposure and uptime sensitivity</span>
-                </li>
-              </ul>
-              
-              <div className="bg-background/50 p-6 rounded-sm border-l-4 border-primary">
-                <p className="text-primary font-medium mb-4">Waiting to systematize until later creates:</p>
-                <div className="grid grid-cols-2 gap-4 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2"><Target size={16} /> Data silos</div>
-                  <div className="flex items-center gap-2"><Zap size={16} /> Reactive firefighting</div>
-                  <div className="flex items-center gap-2"><ShieldCheck size={16} /> Executive blind spots</div>
-                  <div className="flex items-center gap-2"><BarChart3 size={16} /> Higher long-term cost</div>
-                </div>
+          <div className="mb-12">
+            <h3 className="font-serif text-2xl text-primary mb-4">Information Management Objectives</h3>
+            <p className="text-lg text-muted-foreground max-w-3xl">
+              The operations systems strategy is built around four core needs to flatten the complexity curve and enable repeatable, low-risk expansion.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
+              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <Layers size={24} />
               </div>
-              
-              <p className="text-lg font-medium text-primary">
-                Implementing unified systems early flattens the complexity curve and enables repeatable, low-risk expansion.
+              <h3 className="font-serif text-xl text-primary mb-3">Single Source of Truth</h3>
+              <p className="text-muted-foreground mb-6">
+                One consistent view of production, maintenance, cost, and performance across all sites.
               </p>
             </div>
 
-            {/* Right Column: The Solution */}
-            <div className="space-y-8">
-              <h3 className="font-serif text-2xl text-primary">Information Management Objectives</h3>
-              <p className="text-lg text-muted-foreground">
-                The operations systems strategy is built around four core needs:
-              </p>
-              
-              <div className="grid gap-6">
-                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
-                  <h4 className="font-medium text-primary mb-2">Single Source of Truth</h4>
-                  <p className="text-sm text-muted-foreground">One consistent view of production, maintenance, cost, and performance across all sites.</p>
-                </div>
-                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
-                  <h4 className="font-medium text-primary mb-2">Predictive, Not Reactive, Maintenance</h4>
-                  <p className="text-sm text-muted-foreground">Shift from breakdown response to condition-based and predictive maintenance on critical assets.</p>
-                </div>
-                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
-                  <h4 className="font-medium text-primary mb-2">Real-Time Operational Visibility</h4>
-                  <p className="text-sm text-muted-foreground">Executives and operators see the same facts, updated continuously, with role-based dashboards.</p>
-                </div>
-                <div className="bg-background p-6 border border-border/40 hover:border-primary/20 transition-colors">
-                  <h4 className="font-medium text-primary mb-2">Scalable by Design</h4>
-                  <p className="text-sm text-muted-foreground">Systems and templates that deploy quickly to new facilities without reinventing processes.</p>
-                </div>
+            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
+              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <Zap size={24} />
               </div>
+              <h3 className="font-serif text-xl text-primary mb-3">Predictive Maintenance</h3>
+              <p className="text-muted-foreground mb-6">
+                Shift from breakdown response to condition-based and predictive maintenance on critical assets.
+              </p>
+            </div>
+
+            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
+              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <BarChart3 size={24} />
+              </div>
+              <h3 className="font-serif text-xl text-primary mb-3">Real-Time Visibility</h3>
+              <p className="text-muted-foreground mb-6">
+                Executives and operators see the same facts, updated continuously, with role-based dashboards.
+              </p>
+            </div>
+
+            <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
+              <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <Globe size={24} />
+              </div>
+              <h3 className="font-serif text-xl text-primary mb-3">Scalable by Design</h3>
+              <p className="text-muted-foreground mb-6">
+                Systems and templates that deploy quickly to new facilities without reinventing processes.
+              </p>
             </div>
           </div>
 
