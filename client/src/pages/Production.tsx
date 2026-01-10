@@ -65,7 +65,7 @@ export default function Production() {
             />
             <div className="absolute -bottom-6 -left-6 bg-background p-6 border border-border/40 shadow-sm max-w-xs hidden md:block">
               <div className="text-sm font-medium text-primary uppercase tracking-wider mb-2">Key Outcome</div>
-              <p className="text-muted-foreground">"A scalable factory that honors Ken's craftsmanship philosophy."</p>
+              <p className="text-muted-foreground">"Scalable and reliable infrastructure designed to unlock the world’s largest natural gas supply."</p>
             </div>
           </div>
         </div>
