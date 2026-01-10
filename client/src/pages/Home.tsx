@@ -11,8 +11,8 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-bg.jpg" 
-            alt="Craftsmanship detail" 
+            src="/images/banner.png" 
+            alt="Nopetro RNG Operations" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
@@ -64,7 +64,7 @@ export default function Home() {
               <p>
                 The vision is to establish a unified operations systems architecture that enables disciplined scale, protects uptime, and gives leadership real-time visibility across production, maintenance, and distribution.
               </p>
-              <p className="font-medium text-primary">
+              <p>
                 This is not an IT project. It is an operational control system designed to support predictable growth.
               </p>
             </div>
@@ -72,17 +72,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Content - Card Grid Layout */}
+      {/* Key Pillars - Updated with Nopetro Content and 4th Box */}
       <section className="py-24 bg-secondary border-y border-border/40">
         <div className="container">
-          <div className="mb-12">
-            <h3 className="font-serif text-2xl text-primary mb-4">Information Management Objectives</h3>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              The operations systems strategy is built around four core needs to flatten the complexity curve and enable repeatable, low-risk expansion.
-            </p>
-          </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Box 1: Single Source of Truth */}
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Layers size={24} />
@@ -93,6 +87,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Box 2: Predictive Maintenance */}
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Zap size={24} />
@@ -103,6 +98,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Box 3: Real-Time Visibility */}
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <BarChart3 size={24} />
@@ -113,6 +109,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Box 4: Scalable by Design */}
             <div className="bg-background p-8 border border-border/40 hover:border-accent/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Globe size={24} />
@@ -123,84 +120,45 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          {/* Bottom Section: Outcomes */}
-          <div className="mt-16 pt-16 border-t border-border/40">
-            <div className="grid md:grid-cols-12 gap-12">
-              <div className="md:col-span-4">
-                <h3 className="font-serif text-2xl text-primary mb-4">What the Unified Platform Delivers</h3>
-                <p className="text-muted-foreground">
-                  A fully integrated ERP, CMMS, predictive maintenance, and BI layer enables:
-                </p>
-              </div>
-              <div className="md:col-span-8">
-                <div className="grid sm:grid-cols-2 gap-8 mb-12">
-                  <div className="flex gap-4">
-                    <div className="text-4xl font-light text-primary">95%</div>
-                    <div className="text-sm text-muted-foreground pt-2">Target production uptime reliability</div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="text-4xl font-light text-primary">30%</div>
-                    <div className="text-sm text-muted-foreground pt-2">Reduction in unplanned downtime</div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="text-4xl font-light text-primary">10+</div>
-                    <div className="text-sm text-muted-foreground pt-2">Scalable to multiple facilities</div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="text-4xl font-light text-primary">$$$</div>
-                    <div className="text-sm text-muted-foreground pt-2">Lower O&M cost per facility</div>
-                  </div>
-                </div>
-                
-                <div className="bg-primary text-primary-foreground p-8 rounded-sm">
-                  <h4 className="font-serif text-xl mb-4 text-accent">Strategic Outcome</h4>
-                  <p className="text-lg leading-relaxed opacity-90">
-                    The result is an operations platform that turns growth from a risk into a competitive advantage. Instead of scaling chaos, Nopetro scales discipline, visibility, and reliability—protecting capital, supporting teams, and enabling leadership to manage the business with confidence as asset count grows.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Testimonials */}
       <Testimonials />
 
-      {/* Call to Action */}
+      {/* Call to Action - Updated Metrics */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">20+</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Years Experience</div>
+              <div className="text-5xl font-serif font-light text-accent">95%</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Target Uptime</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">74%</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">OEE Achievement</div>
+              <div className="text-5xl font-serif font-light text-accent">30%</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Downtime Reduction</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">$1B+</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">P&L Responsibility</div>
+              <div className="text-5xl font-serif font-light text-accent">10+</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Scalable Facilities</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">34%</div>
-              <div className="text-sm uppercase tracking-widest opacity-80">Output Increase</div>
+              <div className="text-5xl font-serif font-light text-accent">$$$</div>
+              <div className="text-sm uppercase tracking-widest opacity-80">Lower O&M Cost</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quote Section */}
+      {/* Quote Section - Updated with Strategic Outcome */}
       <section className="py-32 bg-background flex items-center justify-center">
         <div className="container max-w-4xl text-center space-y-8">
-          <blockquote className="font-serif text-3xl md:text-4xl text-primary leading-tight italic">
-            "We're not doing that for the title, we're doing that because that's the right thing to do."
+          <blockquote className="font-serif text-2xl md:text-3xl text-primary leading-tight italic">
+            "Instead of scaling chaos, Nopetro scales discipline, visibility, and reliability—protecting capital, supporting teams, and enabling leadership to manage the business with confidence as asset count grows."
           </blockquote>
           <div className="flex flex-col items-center gap-2">
-            <cite className="not-italic font-medium text-primary">Roberto Potenza</cite>
-            <span className="text-sm text-muted-foreground">On Sustainability & Leadership</span>
+            <cite className="not-italic font-medium text-primary">Strategic Outcome</cite>
+            <span className="text-sm text-muted-foreground">Turning growth into competitive advantage</span>
           </div>
         </div>
       </section>
