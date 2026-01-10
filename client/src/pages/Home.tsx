@@ -126,7 +126,7 @@ export default function Home() {
               <div className="text-sm uppercase tracking-widest opacity-80">Years Experience</div>
             </div>
             <div className="space-y-2">
-              <div className="text-5xl font-serif font-light text-accent">74%</div>
+              <div className="text-5xl font-serif font-light text-accent">79%</div>
               <div className="text-sm uppercase tracking-widest opacity-80">OEE Achievement</div>
             </div>
             <div className="space-y-2">
