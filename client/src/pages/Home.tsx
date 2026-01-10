@@ -105,15 +105,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-secondary flex items-center justify-center mb-6 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <ShieldCheck size={24} />
               </div>
-              <h3 className="font-serif text-xl text-primary mb-3">Quality & Culture</h3>
+              <h3 className="font-serif text-xl text-primary mb-3">People, Safety & Performance</h3>
               <p className="text-muted-foreground mb-6">
-                Elevating quality systems while strengthening the culture of craftsmanship and community.
+                Building a culture where safety, accountability, and operational excellence are non-negotiable.
               </p>
-              <Link href="/experience">
-                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
-                  My Background <ArrowRight size={16} className="ml-2" />
-                </a>
-              </Link>
             </div>
           </div>
         </div>
