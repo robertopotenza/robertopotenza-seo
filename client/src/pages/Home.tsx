@@ -114,6 +114,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6">
                 Building a culture where safety, accountability, and operational excellence are non-negotiable.
               </p>
+              <Link href="/experience">
+                <a className="inline-flex items-center text-sm font-medium text-primary hover:text-accent transition-colors">
+                  My Background <ArrowRight size={16} className="ml-2" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
