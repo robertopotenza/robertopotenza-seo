@@ -334,7 +334,7 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-lg font-medium">Element: Site Improvement Plan (SIP)</AccordionTrigger>
+                      <AccordionTrigger className="text-lg font-medium">Site Improvement Plan (SIP)</AccordionTrigger>
                       <AccordionContent className="text-muted-foreground space-y-4">
                         <div className="space-y-4">
                           <div>
