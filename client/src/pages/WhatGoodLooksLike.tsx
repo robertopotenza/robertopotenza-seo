@@ -447,7 +447,7 @@ export default function WhatGoodLooksLike() {
                           <div>
                             <h4 className="font-medium text-primary mb-2">Fully applied</h4>
                             <ul className="space-y-2">
-                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 3,4&5: plan for 85-100% equipment, completion &gt;75% (past 3 months), unperformed replanned, tasks/instructions available.</li>
+                              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> PM Levels 3,4&5: plan for 85-100% equipment, completion &gt;75% (past 3 months), unperformed replanned, tasks/instructions available.le.</li>
                               <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Abnormalities recorded (labels/orders), planned, addressed (small delays acceptable).</li>
                               <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-1 text-accent shrink-0" /> Spare Parts: cycle count followed, action plan for discrepancies, inventory matches physical ±5%.</li>
                             </ul>

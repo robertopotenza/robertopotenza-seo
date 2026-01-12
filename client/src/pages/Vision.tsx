@@ -66,128 +66,130 @@ export default function Vision() {
           <h2 className="font-serif text-3xl text-center text-primary mb-16">Strategic Pillars & Roadmap</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Pillar 1 - RCM Framework (Merged) */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group md:col-span-2 md:row-span-2">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <Settings size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Reliability-Centered Maintenance Framework</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">1</div>
-                    <div>
-                      <strong className="text-primary block text-sm">Select and define the asset</strong>
-                      <span className="text-sm">(criticality, functions, operating context)</span>
+            {/* Column 1: Methodology */}
+            <div className="space-y-8">
+              <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group h-full">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                    <Settings size={24} />
+                  </div>
+                  <CardTitle className="font-serif text-xl">Reliability-Centered Maintenance Framework</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <div className="space-y-4">
+                    <div className="flex gap-3">
+                      <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">1</div>
+                      <div>
+                        <strong className="text-primary block text-sm">Select and define the asset</strong>
+                        <span className="text-sm">(criticality, functions, operating context)</span>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-3">
+                      <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">2</div>
+                      <div>
+                        <strong className="text-primary block text-sm">Analyze how it fails</strong>
+                        <span className="text-sm">(functional failures and failure modes)</span>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">3</div>
+                      <div>
+                        <strong className="text-primary block text-sm">Assess the impact of failure</strong>
+                        <span className="text-sm">(effects and consequences: safety, operations, cost)</span>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">4</div>
+                      <div>
+                        <strong className="text-primary block text-sm">Define the right maintenance strategy</strong>
+                        <span className="text-sm">(condition-based, time-based, failure-finding, or run-to-failure)</span>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">5</div>
+                      <div>
+                        <strong className="text-primary block text-sm">Implement, monitor, and improve</strong>
+                        <span className="text-sm">(CMMS, standard work, feedback, continuous improvement)</span>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">2</div>
-                    <div>
-                      <strong className="text-primary block text-sm">Analyze how it fails</strong>
-                      <span className="text-sm">(functional failures and failure modes)</span>
-                    </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Column 2: Digital Enablement */}
+            <div className="space-y-8">
+              <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                    <Truck size={24} />
                   </div>
+                  <CardTitle className="font-serif text-xl">Unified ERP Strategy</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 1: Understand current system capabilities if an ERP is present.</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 2: Leverage current system capabilities.</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Create a single source of truth across areas.</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-                  <div className="flex gap-3">
-                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">3</div>
-                    <div>
-                      <strong className="text-primary block text-sm">Assess the impact of failure</strong>
-                      <span className="text-sm">(effects and consequences: safety, operations, cost)</span>
-                    </div>
+              <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                    <ShieldCheck size={24} />
                   </div>
+                  <CardTitle className="font-serif text-xl">Power BI Control Tower</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Executive & Operational Dashboards</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Real-time visibility: Production to Fueling</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Mobile-ready role-based views</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
-                  <div className="flex gap-3">
-                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">4</div>
-                    <div>
-                      <strong className="text-primary block text-sm">Define the right maintenance strategy</strong>
-                      <span className="text-sm">(condition-based, time-based, failure-finding, or run-to-failure)</span>
-                    </div>
+            {/* Column 3: Execution & Outcomes */}
+            <div className="space-y-8">
+              <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                    <LineChart size={24} />
                   </div>
+                  <CardTitle className="font-serif text-xl">Implementation Roadmap</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 1-2: Assessment</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 3-4: Pilot (Vero + Stations)</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 5-8: Full Rollout</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-                  <div className="flex gap-3">
-                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">5</div>
-                    <div>
-                      <strong className="text-primary block text-sm">Implement, monitor, and improve</strong>
-                      <span className="text-sm">(CMMS, standard work, feedback, continuous improvement)</span>
-                    </div>
+              <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                    <Users size={24} />
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Pillar 2 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <Truck size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Unified ERP Strategy</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 1: Understand current system capabilities if an ERP is present.</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 2: Leverage current system capabilities.</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Create a single source of truth across areas.</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Pillar 3 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <ShieldCheck size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Power BI Control Tower</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Executive & Operational Dashboards</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Real-time visibility: Production to Fueling</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Mobile-ready role-based views</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-
-
-            {/* Pillar 5 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <LineChart size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Implementation Roadmap</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 1-2: Assessment</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 3-4: Pilot (Vero + Stations)</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Months 5-8: Full Rollout</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Pillar 6 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <Users size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Strategic Value</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Margin capture & Supply security</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Faster scaling & decisions</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduced operational risk</li>
-                </ul>
-              </CardContent>
-            </Card>
+                  <CardTitle className="font-serif text-xl">Strategic Value</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Margin capture & Supply security</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Faster scaling & decisions</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduced operational risk</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
