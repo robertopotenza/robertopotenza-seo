@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench } from "lucide-react";
+import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench, FileCheck } from "lucide-react";
 import { InteractiveComparison } from "@/components/InteractiveComparison";
 
 export default function WhatGoodLooksLike() {
@@ -335,145 +335,173 @@ export default function WhatGoodLooksLike() {
                 <div className="md:col-span-8">
                   {/* Core Operational Procedures Section */}
                   <div className="mb-8">
-                    <h3 className="text-xl font-serif text-primary mb-4">Core Operational Procedures</h3>
+                    <h3 className="text-xl font-serif text-primary mb-6">Core Operational Procedures</h3>
                     
-                    {/* Introduction: Evolving from Checklists to Work Instructions */}
-                    <div className="bg-secondary/10 border border-secondary/20 rounded-sm p-6 mb-6">
-                      <h4 className="font-medium text-lg text-primary mb-3">Evolving from Checklists to World-Class Work Instructions</h4>
-                      <p className="text-muted-foreground mb-4">
-                        We are transitioning from reactive verification tools to proactive guidance systems. By evolving PSSR checklists into <strong>Integrated Work Instructions (IWIs)</strong>, we move from a "did we do it?" mindset to a "how do we do it right every time?" culture.
-                      </p>
-                      
-                      <div className="grid md:grid-cols-2 gap-6 mb-4">
-                        <div className="bg-background p-4 rounded-sm border border-border/40">
-                          <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Current State</div>
-                          <div className="font-medium text-primary mb-2">Reactive Checklists</div>
-                          <ul className="space-y-1 text-sm text-muted-foreground">
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Verifies work <em>after</em> completion</li>
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Focus on compliance</li>
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Operator as inspector</li>
-                          </ul>
-                        </div>
-                        
-                        <div className="bg-background p-4 rounded-sm border-l-2 border-accent shadow-sm">
-                          <div className="text-xs font-bold text-accent uppercase tracking-wider mb-1">Future State</div>
-                          <div className="font-medium text-primary mb-2">Proactive Work Instructions</div>
-                          <ul className="space-y-1 text-sm text-muted-foreground">
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Guides work <em>during</em> execution</li>
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Focus on safety, quality & efficiency</li>
-                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Operator as skilled executor</li>
-                          </ul>
-                        </div>
+                    {/* Topic 1: Evolving from Checklists to World-Class Work Instructions */}
+                    <div className="mb-12">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-sm">1</div>
+                        <h4 className="font-medium text-lg text-primary">Evolving from Checklists to World-Class Work Instructions</h4>
                       </div>
                       
-                      <p className="text-sm text-muted-foreground italic">
-                        The documents below represent the "Gold Standard" for this new approach—combining safety, preparation, execution, and verification into a single, visual workflow.
-                      </p>
+                      <div className="pl-11">
+                        <div className="bg-secondary/10 border border-secondary/20 rounded-sm p-6 mb-6">
+                          <p className="text-muted-foreground mb-4">
+                            We are transitioning from reactive verification tools to proactive guidance systems. By evolving PSSR checklists into <strong>Integrated Work Instructions (IWIs)</strong>, we move from a "did we do it?" mindset to a "how do we do it right every time?" culture.
+                          </p>
+                          
+                          <div className="grid md:grid-cols-2 gap-6 mb-4">
+                            <div className="bg-background p-4 rounded-sm border border-border/40">
+                              <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Current State</div>
+                              <div className="font-medium text-primary mb-2">Reactive Checklists</div>
+                              <ul className="space-y-1 text-sm text-muted-foreground">
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Verifies work <em>after</em> completion</li>
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Focus on compliance</li>
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Operator as inspector</li>
+                              </ul>
+                            </div>
+                            
+                            <div className="bg-background p-4 rounded-sm border-l-2 border-accent shadow-sm">
+                              <div className="text-xs font-bold text-accent uppercase tracking-wider mb-1">Future State</div>
+                              <div className="font-medium text-primary mb-2">Proactive Work Instructions</div>
+                              <ul className="space-y-1 text-sm text-muted-foreground">
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Guides work <em>during</em> execution</li>
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Focus on safety, quality & efficiency</li>
+                                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Operator as skilled executor</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <p className="text-sm text-muted-foreground italic">
+                            The documents below represent the "Gold Standard" for this new approach—combining safety, preparation, execution, and verification into a single, visual workflow.
+                          </p>
+                        </div>
+
+                        {/* Interactive Comparison Component */}
+                        <InteractiveComparison />
+
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                          {/* Document 1 */}
+                          <a 
+                            href="/documents/GLDCrisis.xlsx" 
+                            download
+                            className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                          >
+                            <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                              <img 
+                                src="/images/thumbnails/GLDCrisis_thumb.png" 
+                                alt="Gauge Leak Test Procedure" 
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="p-3 border-t border-border/40">
+                              <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Leak Test</h4>
+                              <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                            </div>
+                          </a>
+
+                          {/* Document 2 */}
+                          <a 
+                            href="/documents/6700-18TPMWorkInstruction-VCell1.xlsx" 
+                            download
+                            className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                          >
+                            <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                              <img 
+                                src="/images/thumbnails/VCell1_thumb.png" 
+                                alt="V-Cell 1 Instruction" 
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="p-3 border-t border-border/40">
+                              <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">V-Cell 1 Instruction</h4>
+                              <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                            </div>
+                          </a>
+
+                          {/* Document 3 */}
+                          <a 
+                            href="/documents/6700-16TPMWorkInstruction-FerrisRight.xlsx" 
+                            download
+                            className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                          >
+                            <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                              <img 
+                                src="/images/thumbnails/FerrisRight_thumb.png" 
+                                alt="Ferris Wheel Right" 
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="p-3 border-t border-border/40">
+                              <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Ferris Wheel Right</h4>
+                              <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                            </div>
+                          </a>
+
+                          {/* Document 4 */}
+                          <a 
+                            href="/documents/6700-17TPMWorkInstruction-Gauge.xlsx" 
+                            download
+                            className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                          >
+                            <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                              <img 
+                                src="/images/thumbnails/Gauge_thumb.png" 
+                                alt="Gauge Instruction" 
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="p-3 border-t border-border/40">
+                              <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Instruction</h4>
+                              <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
                     </div>
 
-                    {/* Interactive Comparison Component */}
-                    <InteractiveComparison />
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {/* Document 1 */}
-                      <a 
-                        href="/documents/GLDCrisis.xlsx" 
-                        download
-                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
-                      >
-                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
-                          <img 
-                            src="/images/thumbnails/GLDCrisis_thumb.png" 
-                            alt="Gauge Leak Test Procedure" 
-                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                            </div>
+                    {/* Topic 2: Standard Operating Procedures */}
+                    <div className="mb-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-primary font-bold text-sm">2</div>
+                        <h4 className="font-medium text-lg text-primary">Standard Operating Procedures</h4>
+                      </div>
+                      
+                      <div className="pl-11">
+                        <div className="bg-secondary/5 border border-dashed border-border rounded-sm p-8 text-center">
+                          <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-3 text-muted-foreground">
+                            <FileCheck size={24} />
                           </div>
+                          <h5 className="font-medium text-primary mb-1">Content Coming Soon</h5>
+                          <p className="text-sm text-muted-foreground max-w-md mx-auto">
+                            Standard Operating Procedures (SOPs) for critical site activities will be available here.
+                          </p>
                         </div>
-                        <div className="p-3 border-t border-border/40">
-                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Leak Test</h4>
-                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
-                        </div>
-                      </a>
-
-                      {/* Document 2 */}
-                      <a 
-                        href="/documents/6700-18TPMWorkInstruction-VCell1.xlsx" 
-                        download
-                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
-                      >
-                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
-                          <img 
-                            src="/images/thumbnails/VCell1_thumb.png" 
-                            alt="V-Cell 1 Instruction" 
-                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-3 border-t border-border/40">
-                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">V-Cell 1 Instruction</h4>
-                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
-                        </div>
-                      </a>
-
-                      {/* Document 3 */}
-                      <a 
-                        href="/documents/6700-16TPMWorkInstruction-FerrisRight.xlsx" 
-                        download
-                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
-                      >
-                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
-                          <img 
-                            src="/images/thumbnails/FerrisRight_thumb.png" 
-                            alt="Ferris Wheel (Right)" 
-                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-3 border-t border-border/40">
-                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Ferris Wheel (Right)</h4>
-                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
-                        </div>
-                      </a>
-
-                      {/* Document 4 */}
-                      <a 
-                        href="/documents/6700-17TPMWorkInstruction-Gauge.xlsx" 
-                        download
-                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
-                      >
-                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
-                          <img 
-                            src="/images/thumbnails/Gauge_thumb.png" 
-                            alt="Gauge Instruction" 
-                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-3 border-t border-border/40">
-                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Instruction</h4>
-                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
-                        </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
 
