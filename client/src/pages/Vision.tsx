@@ -31,9 +31,12 @@ export default function Vision() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <img 
-                src="/images/logistics-global.jpg" 
-                alt="Global Logistics Network" 
+                src="/images/nopetro-company.png" 
+                alt="Nopetro Company Overview" 
                 className="w-full rounded-sm shadow-sm"
+                width="550"
+                height="756"
+                loading="lazy"
               />
             </div>
             <div className="space-y-8">
