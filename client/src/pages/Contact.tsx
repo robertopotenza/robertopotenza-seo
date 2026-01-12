@@ -66,15 +66,15 @@ export default function Contact() {
             {/* Image / Context */}
             <div className="relative h-full min-h-[400px] bg-secondary rounded-sm overflow-hidden border border-border/40">
               <img 
-                src="/images/quality-craftsmanship.jpg" 
-                alt="Craftsmanship" 
+                src="/images/nopetro-group.png" 
+                alt="Nopetro Team" 
                 className="absolute inset-0 w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-background/90 to-transparent">
                 <blockquote className="font-serif text-xl text-primary italic">
-                  "Quality is not an act, it is a habit."
+                  "Without standards, there can be no improvement."
                 </blockquote>
-                <div className="text-sm text-muted-foreground mt-2">— Aristotle</div>
+                <div className="text-sm text-muted-foreground mt-2">— Taiichi Ohno</div>
               </div>
             </div>
 
