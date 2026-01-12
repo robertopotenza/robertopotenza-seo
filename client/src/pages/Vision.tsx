@@ -183,8 +183,8 @@ export default function Vision() {
                 </CardHeader>
                 <CardContent className="text-muted-foreground">
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Margin capture & Supply security</li>
-                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Faster scaling & decisions</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> KPI & Maturity Models</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Strategic roadmap for the plant’s development</li>
                     <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduced operational risk</li>
                   </ul>
                 </CardContent>
