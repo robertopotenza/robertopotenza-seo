@@ -66,20 +66,56 @@ export default function Vision() {
           <h2 className="font-serif text-3xl text-center text-primary mb-16">Strategic Pillars & Roadmap</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Pillar 1 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
+            {/* Pillar 1 - RCM Framework (Merged) */}
+            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group md:col-span-2 md:row-span-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <Settings size={24} />
                 </div>
-                <CardTitle className="font-serif text-xl">Predictable Maintenance</CardTitle>
+                <CardTitle className="font-serif text-xl">Reliability-Centered Maintenance Framework</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> KCF Technologies for critical assets</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Reduce unplanned downtime 20-30%</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Institutionalize predictive maintenance</li>
-                </ul>
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">1</div>
+                    <div>
+                      <strong className="text-primary block text-sm">Select and define the asset</strong>
+                      <span className="text-sm">(criticality, functions, operating context)</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-3">
+                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">2</div>
+                    <div>
+                      <strong className="text-primary block text-sm">Analyze how it fails</strong>
+                      <span className="text-sm">(functional failures and failure modes)</span>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">3</div>
+                    <div>
+                      <strong className="text-primary block text-sm">Assess the impact of failure</strong>
+                      <span className="text-sm">(effects and consequences: safety, operations, cost)</span>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">4</div>
+                    <div>
+                      <strong className="text-primary block text-sm">Define the right maintenance strategy</strong>
+                      <span className="text-sm">(condition-based, time-based, failure-finding, or run-to-failure)</span>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3">
+                    <div className="flex-none w-6 h-6 rounded-full bg-accent/10 text-accent flex items-center justify-center text-xs font-bold mt-0.5">5</div>
+                    <div>
+                      <strong className="text-primary block text-sm">Implement, monitor, and improve</strong>
+                      <span className="text-sm">(CMMS, standard work, feedback, continuous improvement)</span>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -117,22 +153,7 @@ export default function Vision() {
               </CardContent>
             </Card>
 
-            {/* Pillar 4 */}
-            <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary rounded-sm flex items-center justify-center mb-4 text-primary group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                  <Box size={24} />
-                </div>
-                <CardTitle className="font-serif text-xl">Success Metrics</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Uptime ≥ 95%</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> PM Compliance ≥ 95%</li>
-                  <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> 5-10x ROI on Predictive Maintenance</li>
-                </ul>
-              </CardContent>
-            </Card>
+
 
             {/* Pillar 5 */}
             <Card className="border-border/40 bg-background hover:shadow-md transition-all duration-300 group">
