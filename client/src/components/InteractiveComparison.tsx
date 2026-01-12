@@ -5,7 +5,8 @@ import { Tablet, Smartphone } from "lucide-react";
 
 export function InteractiveComparison() {
   const [viewMode, setViewMode] = useState<"checklist" | "instruction">("checklist");
-  const [scenario, setScenario] = useState<"transmitter" | "valve" | "ferris">("transmitter");
+  const [scenario, setScenario] = useState<"pressure" | "valve" | "ferris">("pressure");
+  const [isToolTestPassed, setIsToolTestPassed] = useState(false);
 
   return (
     <div className="bg-background border border-border/40 rounded-sm overflow-hidden mb-8 shadow-sm">
@@ -14,7 +15,7 @@ export function InteractiveComparison() {
         <div>
           <h4 className="font-medium text-primary flex items-center gap-2">
             <FileCheck size={18} className="text-accent" />
-            Live Example: {scenario === "transmitter" ? "Pressure Transmitter Installation" : scenario === "valve" ? "Control Valve Maintenance" : "Ferris Wheel Right TPM"}
+            Live Example: {scenario === "pressure" ? "Pressure Transmitter Installation" : scenario === "valve" ? "Control Valve Maintenance" : "Ferris Wheel Right TPM"}
           </h4>
           <p className="text-xs text-muted-foreground mt-1">
             Toggle between the current reactive approach and the future proactive standard.
@@ -25,10 +26,10 @@ export function InteractiveComparison() {
           {/* Scenario Selector */}
           <div className="flex bg-background rounded-sm border border-border/40 p-1">
             <button
-              onClick={() => setScenario("transmitter")}
+              onClick={() => setScenario("pressure")}
               className={cn(
                 "px-3 py-1.5 text-xs font-medium rounded-sm transition-all",
-                scenario === "transmitter" 
+                scenario === "pressure" 
                   ? "bg-primary/10 text-primary font-bold" 
                   : "text-muted-foreground hover:text-primary"
               )}
@@ -98,12 +99,12 @@ export function InteractiveComparison() {
               <div className="text-center mb-6 border-b border-border/40 pb-4">
                 <h3 className="font-bold text-lg text-gray-800">PSSR CHECKLIST</h3>
                 <p className="text-sm text-gray-500">
-                  {scenario === "transmitter" ? "Instrumentation & Analyzer Field Checklist" : scenario === "valve" ? "Mechanical Maintenance Field Checklist" : "Equipment Safety & Cleaning Checklist"}
+                  {scenario === "pressure" ? "Instrumentation & Analyzer Field Checklist" : scenario === "valve" ? "Mechanical Maintenance Field Checklist" : "Equipment Safety & Cleaning Checklist"}
                 </p>
               </div>
 
               <div className="space-y-4">
-                {scenario === "transmitter" ? (
+                {scenario === "pressure" ? (
                   <>
                     <div className="flex items-start gap-3 p-2 border-b border-gray-100">
                       <div className="w-5 h-5 border border-gray-300 rounded-sm mt-0.5"></div>
@@ -176,6 +177,68 @@ export function InteractiveComparison() {
           </div>
         ) : (
           <div className="max-w-md mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* Supervisor Dashboard Overlay */}
+            <div className="absolute -right-16 top-20 w-64 bg-white rounded-lg shadow-xl border border-slate-200 z-30 hidden lg:block animate-in slide-in-from-right-8 duration-700 delay-300">
+              <div className="bg-slate-900 text-white p-3 rounded-t-lg flex justify-between items-center">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs font-bold uppercase tracking-wider">Live Supervisor View</span>
+                </div>
+                <Users size={14} className="text-slate-400" />
+              </div>
+              <div className="p-3 space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-xs">
+                    RP
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-800">Roberto Potenza</p>
+                    <p className="text-[10px] text-slate-500">Operator • Line 4</p>
+                  </div>
+                  <div className="ml-auto text-[10px] text-slate-400">Now</div>
+                </div>
+                
+                <div className="border-t border-slate-100 pt-2">
+                  <p className="text-[10px] font-bold text-slate-400 uppercase mb-2">Activity Log</p>
+                  <div className="space-y-2">
+                    <div className="flex gap-2 items-start">
+                      <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1 shrink-0"></div>
+                      <div>
+                        <p className="text-[10px] text-slate-700">Started <span className="font-bold">Ferris Wheel Right TPM</span></p>
+                        <p className="text-[9px] text-slate-400">10:42 AM</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2 items-start">
+                      <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1 shrink-0"></div>
+                      <div>
+                        <p className="text-[10px] text-slate-700">Verified <span className="font-bold">Safety Interlocks</span></p>
+                        <p className="text-[9px] text-slate-400">10:43 AM</p>
+                      </div>
+                    </div>
+                    {isToolTestPassed && (
+                      <div className="flex gap-2 items-start animate-in slide-in-from-left-2 duration-300">
+                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1 shrink-0"></div>
+                        <div>
+                          <p className="text-[10px] text-slate-700">Completed <span className="font-bold">Sensor Test (Tool A)</span></p>
+                          <p className="text-[9px] text-slate-400">Just now</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="bg-slate-50 p-2 rounded border border-slate-100 mt-2">
+                  <div className="flex justify-between text-[10px] mb-1">
+                    <span className="text-slate-500">Shift Progress</span>
+                    <span className="font-bold text-slate-700">85%</span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-green-500 w-[85%]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Tablet Frame Simulation */}
             <div className="border-4 border-slate-800 rounded-[2rem] bg-slate-800 overflow-hidden shadow-2xl relative">
               {/* Camera Notch */}
@@ -188,7 +251,7 @@ export function InteractiveComparison() {
                     <div>
                       <div className="text-[10px] font-bold text-accent uppercase tracking-wider">Active Task</div>
                       <h3 className="font-bold text-slate-800 leading-tight">
-                        {scenario === "transmitter" ? "Install Pressure Transmitter" : scenario === "valve" ? "Control Valve PM" : "Ferris Wheel Right TPM"}
+                        {scenario === "pressure" ? "Install Pressure Transmitter" : scenario === "valve" ? "Control Valve PM" : "Ferris Wheel Right TPM"}
                       </h3>
                     </div>
                     <div className="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded-full">
@@ -221,7 +284,7 @@ export function InteractiveComparison() {
 
                   {/* Steps */}
                   <div className="space-y-3">
-                    {scenario === "transmitter" ? (
+                    {scenario === "pressure" ? (
                       <>
                         <div className="bg-white border border-slate-200 rounded-lg p-3 shadow-sm opacity-50">
                           <div className="flex justify-between items-center mb-1">
@@ -321,12 +384,61 @@ export function InteractiveComparison() {
                             3. Use Tool A to push down and verify activation.
                           </p>
                           
-                          <div className="bg-slate-100 rounded-md h-32 mb-3 flex items-center justify-center text-slate-400 text-xs border border-slate-200 border-dashed">
-                            [Visual: SICK Sensor Cleaning & Tool A Test]
+                          <div className="grid grid-cols-2 gap-2 mb-3">
+                            <div className="relative group cursor-pointer overflow-hidden rounded-md border border-slate-200">
+                              <img 
+                                src="/images/sick-sensor-clean.png" 
+                                alt="Cleaning SICK Sensor" 
+                                className="w-full h-24 object-cover hover:scale-105 transition-transform duration-300"
+                              />
+                              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-[10px] px-2 py-1">
+                                Fig 1: Wipe Lens
+                              </div>
+                            </div>
+                            <div className="relative group cursor-pointer overflow-hidden rounded-md border border-slate-200">
+                              <img 
+                                src="/images/sick-sensor-test.png" 
+                                alt="Testing with Tool A" 
+                                className="w-full h-24 object-cover hover:scale-105 transition-transform duration-300"
+                              />
+                              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-[10px] px-2 py-1">
+                                Fig 2: Test with Tool A
+                              </div>
+                            </div>
                           </div>
 
-                          <button className="w-full bg-accent text-white text-sm font-medium py-2 rounded-md shadow-sm hover:bg-accent/90 transition-colors flex items-center justify-center gap-2">
-                            <CheckCircle2 size={14} /> Confirm Sensor Test
+                          <div className="bg-slate-50 rounded-md p-3 mb-3 border border-slate-200">
+                            <p className="text-xs font-bold text-slate-700 mb-2">Interactive Test: Drag Tool A to Sensor</p>
+                            <div className="relative h-16 bg-white rounded border border-slate-200 overflow-hidden flex items-center justify-between px-4">
+                              <div className="w-8 h-8 bg-yellow-400 rounded border border-slate-400 flex items-center justify-center shadow-sm z-10">
+                                <div className={`w-2 h-2 rounded-full ${isToolTestPassed ? 'bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]' : 'bg-slate-300'}`}></div>
+                              </div>
+                              
+                              <div className="absolute left-8 right-16 h-8 flex items-center">
+                                <div className="w-full h-0.5 bg-red-500/20 border-t border-b border-red-500/10"></div>
+                                <div className="absolute inset-0 bg-red-500/5 animate-pulse"></div>
+                              </div>
+
+                              <div 
+                                className={`w-20 h-6 bg-slate-700 text-white text-[10px] flex items-center justify-center rounded cursor-move shadow-md transition-all duration-300 z-20 ${isToolTestPassed ? '-translate-x-24 bg-green-600' : 'hover:-translate-x-2'}`}
+                                onClick={() => {
+                                  setIsToolTestPassed(true);
+                                  setTimeout(() => setIsToolTestPassed(false), 3000);
+                                }}
+                              >
+                                {isToolTestPassed ? 'TEST PASS' : 'TOOL A'}
+                              </div>
+                            </div>
+                            <p className="text-[10px] text-slate-400 mt-1 text-center">
+                              {isToolTestPassed ? 'Sensor Activated! Safety Stop Verified.' : 'Click Tool A to simulate interruption'}
+                            </p>
+                          </div>
+
+                          <button 
+                            className={`w-full text-white text-sm font-medium py-2 rounded-md shadow-sm transition-colors flex items-center justify-center gap-2 ${isToolTestPassed ? 'bg-green-600 hover:bg-green-700' : 'bg-slate-300 cursor-not-allowed'}`}
+                            disabled={!isToolTestPassed}
+                          >
+                            <CheckCircle2 size={14} /> {isToolTestPassed ? 'Confirm Sensor Test' : 'Perform Test First'}
                           </button>
                         </div>
 
