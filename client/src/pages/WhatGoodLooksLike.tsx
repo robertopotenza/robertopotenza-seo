@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench } from "lucide-react";
+import { InteractiveComparison } from "@/components/InteractiveComparison";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -369,6 +370,9 @@ export default function WhatGoodLooksLike() {
                         The documents below represent the "Gold Standard" for this new approach—combining safety, preparation, execution, and verification into a single, visual workflow.
                       </p>
                     </div>
+
+                    {/* Interactive Comparison Component */}
+                    <InteractiveComparison />
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {/* Document 1 */}
