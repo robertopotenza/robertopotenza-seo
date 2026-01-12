@@ -335,6 +335,41 @@ export default function WhatGoodLooksLike() {
                   {/* Core Operational Procedures Section */}
                   <div className="mb-8">
                     <h3 className="text-xl font-serif text-primary mb-4">Core Operational Procedures</h3>
+                    
+                    {/* Introduction: Evolving from Checklists to Work Instructions */}
+                    <div className="bg-secondary/10 border border-secondary/20 rounded-sm p-6 mb-6">
+                      <h4 className="font-medium text-lg text-primary mb-3">Evolving from Checklists to World-Class Work Instructions</h4>
+                      <p className="text-muted-foreground mb-4">
+                        We are transitioning from reactive verification tools to proactive guidance systems. By evolving PSSR checklists into <strong>Integrated Work Instructions (IWIs)</strong>, we move from a "did we do it?" mindset to a "how do we do it right every time?" culture.
+                      </p>
+                      
+                      <div className="grid md:grid-cols-2 gap-6 mb-4">
+                        <div className="bg-background p-4 rounded-sm border border-border/40">
+                          <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Current State</div>
+                          <div className="font-medium text-primary mb-2">Reactive Checklists</div>
+                          <ul className="space-y-1 text-sm text-muted-foreground">
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Verifies work <em>after</em> completion</li>
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Focus on compliance</li>
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-red-400"></span>Operator as inspector</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-background p-4 rounded-sm border-l-2 border-accent shadow-sm">
+                          <div className="text-xs font-bold text-accent uppercase tracking-wider mb-1">Future State</div>
+                          <div className="font-medium text-primary mb-2">Proactive Work Instructions</div>
+                          <ul className="space-y-1 text-sm text-muted-foreground">
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Guides work <em>during</em> execution</li>
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Focus on safety, quality & efficiency</li>
+                            <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Operator as skilled executor</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <p className="text-sm text-muted-foreground italic">
+                        The documents below represent the "Gold Standard" for this new approach—combining safety, preparation, execution, and verification into a single, visual workflow.
+                      </p>
+                    </div>
+
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {/* Document 1 */}
                       <a 
