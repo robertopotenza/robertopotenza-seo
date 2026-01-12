@@ -332,6 +332,112 @@ export default function WhatGoodLooksLike() {
                   </p>
                 </div>
                 <div className="md:col-span-8">
+                  {/* Core Operational Procedures Section */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-serif text-primary mb-4">Core Operational Procedures</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      {/* Document 1 */}
+                      <a 
+                        href="/documents/GLDCrisis.xlsx" 
+                        download
+                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                          <img 
+                            src="/images/thumbnails/GLDCrisis_thumb.png" 
+                            alt="Gauge Leak Test Procedure" 
+                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="p-3 border-t border-border/40">
+                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Leak Test</h4>
+                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                        </div>
+                      </a>
+
+                      {/* Document 2 */}
+                      <a 
+                        href="/documents/6700-18TPMWorkInstruction-VCell1.xlsx" 
+                        download
+                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                          <img 
+                            src="/images/thumbnails/VCell1_thumb.png" 
+                            alt="V-Cell 1 Instruction" 
+                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="p-3 border-t border-border/40">
+                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">V-Cell 1 Instruction</h4>
+                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                        </div>
+                      </a>
+
+                      {/* Document 3 */}
+                      <a 
+                        href="/documents/6700-16TPMWorkInstruction-FerrisRight.xlsx" 
+                        download
+                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                          <img 
+                            src="/images/thumbnails/FerrisRight_thumb.png" 
+                            alt="Ferris Wheel (Right)" 
+                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="p-3 border-t border-border/40">
+                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Ferris Wheel (Right)</h4>
+                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                        </div>
+                      </a>
+
+                      {/* Document 4 */}
+                      <a 
+                        href="/documents/6700-17TPMWorkInstruction-Gauge.xlsx" 
+                        download
+                        className="group block bg-background border border-border/40 rounded-sm overflow-hidden hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="aspect-[3/4] relative overflow-hidden bg-secondary/20">
+                          <img 
+                            src="/images/thumbnails/Gauge_thumb.png" 
+                            alt="Gauge Instruction" 
+                            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <div className="bg-background/90 text-primary p-2 rounded-full shadow-sm">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="p-3 border-t border-border/40">
+                          <h4 className="font-medium text-sm text-primary line-clamp-2 group-hover:text-accent transition-colors">Gauge Instruction</h4>
+                          <p className="text-xs text-muted-foreground mt-1">XLSX Document</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
                       <AccordionTrigger className="text-lg font-medium">Site Improvement Plan (SIP)</AccordionTrigger>
