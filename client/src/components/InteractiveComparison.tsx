@@ -145,19 +145,19 @@ export function InteractiveComparison() {
                   <>
                     <div className="flex items-start gap-3 p-2 border-b border-gray-100">
                       <div className="w-5 h-5 border border-gray-300 rounded-sm mt-0.5"></div>
-                      <div className="text-sm text-gray-600">Check PPE (glasses, gloves, sleeves).</div>
+                      <div className="text-sm text-gray-600">Check Machine Safety</div>
                     </div>
                     <div className="flex items-start gap-3 p-2 border-b border-gray-100">
                       <div className="w-5 h-5 border border-gray-300 rounded-sm mt-0.5"></div>
-                      <div className="text-sm text-gray-600">Verify radar and E-stops function.</div>
+                      <div className="text-sm text-gray-600">Clean Machine Area</div>
                     </div>
                     <div className="flex items-start gap-3 p-2 border-b border-gray-100">
                       <div className="w-5 h-5 border border-gray-300 rounded-sm mt-0.5"></div>
-                      <div className="text-sm text-gray-600">Clean fixture base and floor.</div>
+                      <div className="text-sm text-gray-600">Check Fluid Levels</div>
                     </div>
                     <div className="flex items-start gap-3 p-2 border-b border-gray-100">
                       <div className="w-5 h-5 border border-gray-300 rounded-sm mt-0.5"></div>
-                      <div className="text-sm text-gray-600">Check SICK sensor for debris.</div>
+                      <div className="text-sm text-gray-600">Grease Components</div>
                     </div>
                   </>
                 )}
@@ -295,35 +295,47 @@ export function InteractiveComparison() {
                       <>
                         <div className="bg-white border border-slate-200 rounded-lg p-3 shadow-sm opacity-50">
                           <div className="flex justify-between items-center mb-1">
-                            <span className="text-xs font-bold text-slate-400">Step 1</span>
+                            <span className="text-xs font-bold text-slate-400">Step 1: Safety</span>
                             <CheckCircle2 size={14} className="text-green-500" />
                           </div>
-                          <p className="text-sm text-slate-600 line-through">Verify E-Stops & Radar Safety.</p>
+                          <p className="text-sm text-slate-600 line-through">Verify Radar & E-Stops functionality. Check safety zone fixations.</p>
+                        </div>
+
+                        <div className="bg-white border border-slate-200 rounded-lg p-3 shadow-sm opacity-50">
+                          <div className="flex justify-between items-center mb-1">
+                            <span className="text-xs font-bold text-slate-400">Step 2: Fluids</span>
+                            <CheckCircle2 size={14} className="text-green-500" />
+                          </div>
+                          <p className="text-sm text-slate-600 line-through">Purge air filter. Check Vogel greasing level (Vacuoline).</p>
                         </div>
 
                         <div className="bg-white border-l-4 border-accent rounded-lg p-4 shadow-md ring-1 ring-accent/10">
                           <div className="flex justify-between items-center mb-2">
-                            <span className="text-xs font-bold text-accent">Step 2 (Current)</span>
+                            <span className="text-xs font-bold text-accent">Step 3: Cleaning (Current)</span>
                             <span className="bg-accent/10 text-accent text-[10px] px-2 py-0.5 rounded-full font-bold">Action Required</span>
                           </div>
                           <h5 className="font-bold text-slate-800 mb-1">Clean SICK Sensor</h5>
-                          <p className="text-sm text-slate-600 mb-3">Wipe surface with clean rag. Ensure no dust/dirt remains. Verify sensor is lit only when part is present.</p>
+                          <p className="text-sm text-slate-600 mb-3">
+                            1. Wipe surface with clean rag.<br/>
+                            2. Check if sensor is lit without activation (must be OFF).<br/>
+                            3. Use Tool A to push down and verify activation.
+                          </p>
                           
                           <div className="bg-slate-100 rounded-md h-32 mb-3 flex items-center justify-center text-slate-400 text-xs border border-slate-200 border-dashed">
-                            [Visual: Sensor Location & Cleaning Method]
+                            [Visual: SICK Sensor Cleaning & Tool A Test]
                           </div>
 
                           <button className="w-full bg-accent text-white text-sm font-medium py-2 rounded-md shadow-sm hover:bg-accent/90 transition-colors flex items-center justify-center gap-2">
-                            <CheckCircle2 size={14} /> Confirm Sensor Clean
+                            <CheckCircle2 size={14} /> Confirm Sensor Test
                           </button>
                         </div>
 
                         <div className="bg-white border border-slate-200 rounded-lg p-3 shadow-sm opacity-50">
                           <div className="flex justify-between items-center mb-1">
-                            <span className="text-xs font-bold text-slate-400">Step 3</span>
+                            <span className="text-xs font-bold text-slate-400">Step 4: Slides</span>
                             <div className="w-4 h-4 border border-slate-300 rounded-full"></div>
                           </div>
-                          <p className="text-sm text-slate-600">Clean fixture base and floor.</p>
+                          <p className="text-sm text-slate-600">Remove excess oil, clean slides/pads, remove chips.</p>
                         </div>
                       </>
                     )}
