@@ -338,12 +338,12 @@ export default function WhatGoodLooksLike() {
                     <h3 className="text-xl font-serif text-primary mb-6">Core Operational Procedures</h3>
                     
                     <Accordion type="single" collapsible className="w-full space-y-4">
-                      {/* Topic 1: Evolving from Checklists to World-Class Work Instructions */}
+                      {/* Topic 1: Evolving from Checklists to TPM Standard Work */}
                       <AccordionItem value="topic-1" className="border border-border/40 rounded-sm px-4">
                         <AccordionTrigger className="hover:no-underline py-4">
                           <div className="flex items-center gap-3 text-left">
                             <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-sm shrink-0">1</div>
-                            <h4 className="font-medium text-lg text-primary">Evolving from Checklists to World-Class Work Instructions</h4>
+                            <h4 className="font-medium text-lg text-primary">Evolving from Checklists to TPM Standard Work</h4>
                           </div>
                         </AccordionTrigger>
                         <AccordionContent className="pt-2 pb-6 pl-11">
