@@ -751,12 +751,12 @@ export default function WhatGoodLooksLike() {
             <a href="/production" className="inline-flex items-center justify-center h-12 px-8 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-medium">
               View Production Roadmap <ArrowRight className="ml-2 h-4 w-4" />
             </a>
-            <Link to="/sop-evaluation">
+            <a href="https://sopscoreapp-hkamnpxc.manus.space" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="h-12 px-8 rounded-none border-primary text-primary hover:bg-primary/5 text-base font-medium gap-2">
                 <FileCheck size={16} />
                 SOP Evaluation
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
