@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench, FileCheck } from "lucide-react";
 import { InteractiveComparison } from "@/components/InteractiveComparison";
+import { Link } from "wouter";
 
 export default function WhatGoodLooksLike() {
   return (
@@ -750,10 +751,12 @@ export default function WhatGoodLooksLike() {
             <a href="/production" className="inline-flex items-center justify-center h-12 px-8 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-medium">
               View Production Roadmap <ArrowRight className="ml-2 h-4 w-4" />
             </a>
-            <Button variant="outline" className="h-12 px-8 rounded-none border-primary text-primary hover:bg-primary/5 text-base font-medium gap-2">
-              <FileCheck size={16} />
-              SOP Evaluation
-            </Button>
+            <Link to="/sop-evaluation">
+              <Button variant="outline" className="h-12 px-8 rounded-none border-primary text-primary hover:bg-primary/5 text-base font-medium gap-2">
+                <FileCheck size={16} />
+                SOP Evaluation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

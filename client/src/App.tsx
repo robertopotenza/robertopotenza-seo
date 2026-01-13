@@ -12,6 +12,7 @@ import WhatGoodLooksLike from "@/pages/WhatGoodLooksLike";
 import Contact from "./pages/Contact";
 import ChromaloxCaseStudy from "./pages/ChromaloxCaseStudy";
 import Projects from "./pages/Projects";
+import SOPEvaluation from "./pages/SOPEvaluation";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/chromalox" component={ChromaloxCaseStudy} />
       <Route path="/projects" component={Projects} />
+      <Route path="/sop-evaluation" component={SOPEvaluation} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
