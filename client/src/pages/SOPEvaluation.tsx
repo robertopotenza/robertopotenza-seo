@@ -1,232 +1,302 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Slider } from "@/components/ui/slider";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, CheckCircle2, AlertCircle, FileText, Calculator } from "lucide-react";
-import { Link } from "wouter";
+import { Textarea } from "@/components/ui/textarea";
+import { FileText, Upload, Loader2, ArrowLeft } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { toast } from "sonner";
 
 export default function SOPEvaluation() {
-  const [sopId, setSopId] = useState("");
-  const [scores, setScores] = useState({
-    safety: 3,
-    clarity: 3,
-    efficiency: 3,
-    completeness: 3,
-    visuals: 3
+  const [, setLocation] = useLocation();
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const [formData, setFormData] = useState({
+    sopTitle: "",
+    facility: "",
+    systemOrProcess: "",
+    revision: "",
+    effectiveDate: "",
+    reviewerName: "",
+    reviewDate: "",
+    sopContent: "",
   });
-  const [submitted, setSubmitted] = useState(false);
 
-  const calculateTotal = () => {
-    const sum = Object.values(scores).reduce((a, b) => a + b, 0);
-    return (sum / (Object.keys(scores).length * 5)) * 100;
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState<string>("");
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const validTypes = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
+      if (!validTypes.includes(file.type)) {
+        toast.error("Invalid file type. Please upload PDF, DOCX, or TXT files.");
+        return;
+      }
+      setSelectedFile(file);
+      setFormData(prev => ({ ...prev, sopContent: "" }));
+    }
   };
 
-  const totalScore = calculateTotal();
-
-  const getGrade = (score: number) => {
-    if (score >= 90) return { label: "World Class", color: "text-green-600", bg: "bg-green-100" };
-    if (score >= 80) return { label: "Standard", color: "text-blue-600", bg: "bg-blue-100" };
-    if (score >= 60) return { label: "Needs Improvement", color: "text-yellow-600", bg: "bg-yellow-100" };
-    return { label: "Critical Gaps", color: "text-red-600", bg: "bg-red-100" };
+  const extractTextFromFile = async (file: File): Promise<string> => {
+    if (file.type === 'text/plain') {
+      return await file.text();
+    }
+    // For demo purposes, we'll simulate extraction for other types
+    return `[Simulated content extraction for ${file.name}]`;
   };
 
-  const grade = getGrade(totalScore);
-
-  const handleSliderChange = (category: keyof typeof scores, value: number[]) => {
-    setScores(prev => ({ ...prev, [category]: value[0] }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    // In a real app, this would save to a database
+    
+    if (!formData.sopTitle.trim()) {
+      toast.error("SOP Title is required");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setUploadProgress("Initializing system...");
+
+    try {
+      // Simulate API delays
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      let finalContent = formData.sopContent;
+
+      if (selectedFile) {
+        setUploadProgress("Uploading file...");
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        setUploadProgress("Extracting text from document...");
+        finalContent = await extractTextFromFile(selectedFile);
+      }
+
+      if (!finalContent.trim() && !selectedFile) {
+        toast.error("Please provide SOP content either by uploading a file or pasting text");
+        setIsSubmitting(false);
+        return;
+      }
+
+      setUploadProgress("Creating evaluation...");
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      setUploadProgress("Starting analysis...");
+      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      toast.success("Evaluation started successfully!");
+      // In a real app, this would redirect to results. For now, we'll just show success.
+      // setLocation(`/evaluation/123`); 
+      
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast.error("Failed to submit evaluation");
+    } finally {
+      setIsSubmitting(false);
+      setUploadProgress("");
+    }
   };
 
   return (
     <Layout>
-      <div className="min-h-screen bg-secondary/10 py-12">
-        <div className="container max-w-3xl mx-auto px-4">
-          <Link to="/what-good-looks-like" className="inline-flex items-center text-muted-foreground hover:text-primary mb-6 transition-colors">
-            <ArrowLeft size={16} className="mr-2" /> Back to What Good Looks Like
-          </Link>
-
-          <div className="mb-8">
-            <h1 className="font-serif text-3xl md:text-4xl text-primary mb-2">SOP Scoring & Evaluation</h1>
-            <p className="text-muted-foreground">
-              Evaluate Standard Operating Procedures against World Class criteria to identify gaps and drive improvement.
-            </p>
+      <div className="min-h-screen bg-slate-50">
+        <header className="border-b bg-white">
+          <div className="container py-4 flex items-center gap-4">
+            <Link href="/what-good-looks-like">
+              <Button variant="ghost" size="sm">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back
+              </Button>
+            </Link>
+            <div className="flex items-center gap-2">
+              <FileText className="h-6 w-6 text-primary" />
+              <h1 className="text-xl font-semibold">New SOP Evaluation</h1>
+            </div>
           </div>
+        </header>
 
-          {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Document Details</CardTitle>
-                  <CardDescription>Enter the details of the SOP you are evaluating.</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid gap-2">
-                    <Label htmlFor="sop-id">SOP Title or ID</Label>
-                    <Input 
-                      id="sop-id" 
-                      placeholder="e.g., SOP-MAINT-001 Pump Overhaul" 
-                      value={sopId}
-                      onChange={(e) => setSopId(e.target.value)}
-                      required
+        <main className="container py-8 max-w-4xl">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Document Upload Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Document Upload</CardTitle>
+                <CardDescription>
+                  Upload your SOP document in PDF, DOCX, or TXT format, or paste the text directly below.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <Label htmlFor="file-upload">Upload File</Label>
+                  <div className="mt-2">
+                    <input
+                      ref={fileInputRef}
+                      id="file-upload"
+                      type="file"
+                      accept=".pdf,.docx,.txt"
+                      onChange={handleFileSelect}
+                      className="hidden"
                     />
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Evaluation Criteria</CardTitle>
-                  <CardDescription>Rate each dimension on a scale of 1 (Poor) to 5 (Excellent).</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-8">
-                  {/* Safety */}
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Label className="text-base font-medium">Safety Integration</Label>
-                      <span className="font-bold text-primary">{scores.safety}/5</span>
-                    </div>
-                    <Slider 
-                      value={[scores.safety]} 
-                      min={1} 
-                      max={5} 
-                      step={1} 
-                      onValueChange={(val) => handleSliderChange('safety', val)} 
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      Are hazards clearly identified? Are PPE requirements explicit? Are warnings placed at the point of risk?
-                    </p>
-                  </div>
-
-                  {/* Clarity */}
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Label className="text-base font-medium">Clarity & Conciseness</Label>
-                      <span className="font-bold text-primary">{scores.clarity}/5</span>
-                    </div>
-                    <Slider 
-                      value={[scores.clarity]} 
-                      min={1} 
-                      max={5} 
-                      step={1} 
-                      onValueChange={(val) => handleSliderChange('clarity', val)} 
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      Is the language simple and direct? Are steps logical? Is jargon avoided or defined?
-                    </p>
-                  </div>
-
-                  {/* Visuals */}
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Label className="text-base font-medium">Visual Standards</Label>
-                      <span className="font-bold text-primary">{scores.visuals}/5</span>
-                    </div>
-                    <Slider 
-                      value={[scores.visuals]} 
-                      min={1} 
-                      max={5} 
-                      step={1} 
-                      onValueChange={(val) => handleSliderChange('visuals', val)} 
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      Are photos/diagrams used effectively? Do visuals clearly show "Good" vs "Bad"?
-                    </p>
-                  </div>
-
-                  {/* Efficiency */}
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Label className="text-base font-medium">Process Efficiency</Label>
-                      <span className="font-bold text-primary">{scores.efficiency}/5</span>
-                    </div>
-                    <Slider 
-                      value={[scores.efficiency]} 
-                      min={1} 
-                      max={5} 
-                      step={1} 
-                      onValueChange={(val) => handleSliderChange('efficiency', val)} 
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      Is the sequence optimized? Are tools/parts listed upfront? Is non-value-added motion minimized?
-                    </p>
-                  </div>
-
-                  {/* Completeness */}
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Label className="text-base font-medium">Completeness & Verification</Label>
-                      <span className="font-bold text-primary">{scores.completeness}/5</span>
-                    </div>
-                    <Slider 
-                      value={[scores.completeness]} 
-                      min={1} 
-                      max={5} 
-                      step={1} 
-                      onValueChange={(val) => handleSliderChange('completeness', val)} 
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      Are all critical steps covered? Are there clear verification points (checks/measurements)?
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <div className="sticky bottom-4 bg-background/80 backdrop-blur-md p-4 border rounded-lg shadow-lg flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg ${grade.bg} ${grade.color}`}>
-                    {Math.round(totalScore)}%
-                  </div>
-                  <div>
-                    <div className="text-sm font-medium text-muted-foreground">Current Grade</div>
-                    <div className={`font-bold ${grade.color}`}>{grade.label}</div>
-                  </div>
-                </div>
-                <Button type="submit" size="lg">Submit Evaluation</Button>
-              </div>
-            </form>
-          ) : (
-            <Card className="border-green-200 bg-green-50/50">
-              <CardContent className="pt-6 text-center py-12">
-                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle2 size={32} />
-                </div>
-                <h2 className="text-2xl font-bold text-primary mb-2">Evaluation Submitted</h2>
-                <p className="text-muted-foreground mb-8">
-                  The evaluation for <span className="font-medium text-foreground">{sopId}</span> has been recorded.
-                </p>
-                
-                <div className="max-w-sm mx-auto bg-background rounded-lg border p-6 mb-8 shadow-sm">
-                  <div className="text-sm text-muted-foreground mb-1">Final Score</div>
-                  <div className="text-4xl font-bold text-primary mb-2">{Math.round(totalScore)}%</div>
-                  <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${grade.bg} ${grade.color}`}>
-                    {grade.label}
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() => fileInputRef.current?.click()}
+                      className="w-full"
+                      disabled={isSubmitting}
+                    >
+                      <Upload className="h-4 w-4 mr-2" />
+                      {selectedFile ? selectedFile.name : "Choose File"}
+                    </Button>
                   </div>
                 </div>
 
-                <div className="flex justify-center gap-4">
-                  <Button variant="outline" onClick={() => {
-                    setSubmitted(false);
-                    setSopId("");
-                    setScores({ safety: 3, clarity: 3, efficiency: 3, completeness: 3, visuals: 3 });
-                  }}>
-                    Evaluate Another SOP
-                  </Button>
-                  <Link to="/what-good-looks-like">
-                    <Button>Return to Dashboard</Button>
-                  </Link>
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-white px-2 text-muted-foreground">Or paste text</span>
+                  </div>
+                </div>
+
+                <div>
+                  <Label htmlFor="sopContent">SOP Content (Text)</Label>
+                  <Textarea
+                    id="sopContent"
+                    value={formData.sopContent}
+                    onChange={(e) => setFormData(prev => ({ ...prev, sopContent: e.target.value }))}
+                    placeholder="Paste your SOP content here..."
+                    rows={8}
+                    disabled={!!selectedFile || isSubmitting}
+                    className="mt-2"
+                  />
                 </div>
               </CardContent>
             </Card>
-          )}
-        </div>
+
+            {/* Metadata Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle>SOP Metadata</CardTitle>
+                <CardDescription>
+                  Provide identifying information for this SOP evaluation.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <Label htmlFor="sopTitle">SOP Title *</Label>
+                  <Input
+                    id="sopTitle"
+                    value={formData.sopTitle}
+                    onChange={(e) => setFormData(prev => ({ ...prev, sopTitle: e.target.value }))}
+                    placeholder="e.g., Compressor Startup Procedure"
+                    required
+                    disabled={isSubmitting}
+                    className="mt-2"
+                  />
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="facility">Facility / Site</Label>
+                    <Input
+                      id="facility"
+                      value={formData.facility}
+                      onChange={(e) => setFormData(prev => ({ ...prev, facility: e.target.value }))}
+                      placeholder="e.g., Plant A"
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="systemOrProcess">System or Process Name</Label>
+                    <Input
+                      id="systemOrProcess"
+                      value={formData.systemOrProcess}
+                      onChange={(e) => setFormData(prev => ({ ...prev, systemOrProcess: e.target.value }))}
+                      placeholder="e.g., Compression System"
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="revision">Revision</Label>
+                    <Input
+                      id="revision"
+                      value={formData.revision}
+                      onChange={(e) => setFormData(prev => ({ ...prev, revision: e.target.value }))}
+                      placeholder="e.g., Rev 3.0"
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="effectiveDate">Effective Date</Label>
+                    <Input
+                      id="effectiveDate"
+                      type="date"
+                      value={formData.effectiveDate}
+                      onChange={(e) => setFormData(prev => ({ ...prev, effectiveDate: e.target.value }))}
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="reviewerName">Reviewer Name</Label>
+                    <Input
+                      id="reviewerName"
+                      value={formData.reviewerName}
+                      onChange={(e) => setFormData(prev => ({ ...prev, reviewerName: e.target.value }))}
+                      placeholder="e.g., John Doe"
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="reviewDate">Review Date</Label>
+                    <Input
+                      id="reviewDate"
+                      type="date"
+                      value={formData.reviewDate}
+                      onChange={(e) => setFormData(prev => ({ ...prev, reviewDate: e.target.value }))}
+                      disabled={isSubmitting}
+                      className="mt-2"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="flex justify-end gap-4">
+              <Link href="/what-good-looks-like">
+                <Button type="button" variant="outline" disabled={isSubmitting}>
+                  Cancel
+                </Button>
+              </Link>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    {uploadProgress || "Processing..."}
+                  </>
+                ) : (
+                  "Start Evaluation"
+                )}
+              </Button>
+            </div>
+          </form>
+        </main>
       </div>
     </Layout>
   );
