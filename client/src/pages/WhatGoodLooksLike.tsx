@@ -504,10 +504,7 @@ export default function WhatGoodLooksLike() {
                             <p className="text-muted-foreground max-w-md mx-auto mb-6">
                               Standard Operating Procedures (SOPs) for core processes will be available here.
                             </p>
-                            <Button variant="outline" className="gap-2">
-                              <FileCheck size={16} />
-                              Add SOP Evaluation
-                            </Button>
+                            
                           </div>
                         </AccordionContent>
                       </AccordionItem>
@@ -749,9 +746,15 @@ export default function WhatGoodLooksLike() {
             This framework is not just theory—it's a proven operating system that I have deployed 
             across multiple global sites to drive double-digit improvements in efficiency and quality.
           </p>
-          <a href="/production" className="inline-flex items-center justify-center h-12 px-8 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-medium">
-            View Production Roadmap <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/production" className="inline-flex items-center justify-center h-12 px-8 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-medium">
+              View Production Roadmap <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
+            <Button variant="outline" className="h-12 px-8 rounded-none border-primary text-primary hover:bg-primary/5 text-base font-medium gap-2">
+              <FileCheck size={16} />
+              Add SOP Evaluation
+            </Button>
+          </div>
         </div>
       </section>
     </Layout>
