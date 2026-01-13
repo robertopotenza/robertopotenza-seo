@@ -752,7 +752,7 @@ export default function WhatGoodLooksLike() {
             </a>
             <Button variant="outline" className="h-12 px-8 rounded-none border-primary text-primary hover:bg-primary/5 text-base font-medium gap-2">
               <FileCheck size={16} />
-              Add SOP Evaluation
+              SOP Evaluation
             </Button>
           </div>
         </div>
