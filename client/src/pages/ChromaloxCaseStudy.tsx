@@ -145,7 +145,7 @@ export default function ChromaloxCaseStudy() {
                 Beyond the metrics, we achieved <strong>LEED Gold certification</strong>, validating our commitment to environmental stewardship. The expansion will create 155 new jobs over the next decade, cementing our role as a community pillar in Weber County.
               </p>
               <p>
-                Most importantly, we proved that industrial growth doesn't have to come at the expense of the planet—a philosophy that perfectly aligns with Balanced Body's values of craftsmanship and long-term stewardship.
+                Most importantly, we proved that industrial growth doesn't have to come at the expense of the planet—a philosophy that perfectly aligns with Nopetro's values of sustainability and long-term stewardship.
               </p>
             </div>
           </div>
@@ -159,9 +159,9 @@ export default function ChromaloxCaseStudy() {
           <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center text-primary mx-auto mb-6 shadow-sm">
             <Target size={32} />
           </div>
-          <h2 className="font-serif text-2xl text-primary mb-4">Why This Matters for Balanced Body</h2>
+          <h2 className="font-serif text-2xl text-primary mb-4">Why This Matters for Nopetro</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            "This project demonstrates my ability to manage complex, high-stakes capital projects that balance financial performance with core company values. I bring this same 'Builder Mindset' to Balanced Body—ready to scale your operations while protecting the legacy of quality and sustainability that Ken Endelman has built over 50 years."
+            "This project demonstrates my ability to manage complex, high-stakes capital projects that balance financial performance with core company values. I bring this same 'Builder Mindset' to Nopetro—ready to scale your operations while protecting the legacy of quality and sustainability."
           </p>
         </div>
       </section>

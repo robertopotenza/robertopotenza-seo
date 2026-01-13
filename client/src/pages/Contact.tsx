@@ -16,7 +16,7 @@ export default function Contact() {
               <div>
                 <h1 className="font-serif text-4xl text-primary mb-4">Let's Connect</h1>
                 <p className="text-lg text-muted-foreground">
-                  I welcome the opportunity to discuss how my operational experience aligns with Balanced Body's strategic goals.
+                  I welcome the opportunity to discuss how my operational experience aligns with Nopetro's strategic goals.
                 </p>
               </div>
 
