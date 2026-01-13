@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import { CheckCircle2, Users, Clock, ShieldCheck, Zap, TrendingUp, ArrowRight, BarChart3, Layers, Calendar, Target, Flag, Wrench, FileCheck } from "lucide-react";
 import { InteractiveComparison } from "@/components/InteractiveComparison";
 
@@ -491,18 +492,22 @@ export default function WhatGoodLooksLike() {
                         <AccordionTrigger className="hover:no-underline py-4">
                           <div className="flex items-center gap-3 text-left">
                             <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-primary font-bold text-sm shrink-0">2</div>
-                            <h4 className="font-medium text-lg text-primary">Standard Operating Procedures</h4>
+<h4 className="font-medium text-lg text-primary">Standard Operating Procedures</h4>
                           </div>
                         </AccordionTrigger>
                         <AccordionContent className="pt-2 pb-6 pl-11">
-                          <div className="bg-secondary/5 border border-dashed border-border rounded-sm p-8 text-center">
-                            <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-3 text-muted-foreground">
+                          <div className="bg-secondary/10 border border-secondary/20 rounded-sm p-8 text-center">
+                            <div className="w-12 h-12 bg-background rounded-full flex items-center justify-center mx-auto mb-4 text-muted-foreground">
                               <FileCheck size={24} />
                             </div>
-                            <h5 className="font-medium text-primary mb-1">Content Coming Soon</h5>
-                            <p className="text-sm text-muted-foreground max-w-md mx-auto">
-                              Standard Operating Procedures (SOPs) for critical site activities will be available here.
+                            <h5 className="text-lg font-medium text-primary mb-2">Content Coming Soon</h5>
+                            <p className="text-muted-foreground max-w-md mx-auto mb-6">
+                              Standard Operating Procedures (SOPs) for core processes will be available here.
                             </p>
+                            <Button variant="outline" className="gap-2">
+                              <FileCheck size={16} />
+                              Add SOP Evaluation
+                            </Button>
                           </div>
                         </AccordionContent>
                       </AccordionItem>
