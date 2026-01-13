@@ -27,7 +27,7 @@ export default function Experience() {
               <div className="bg-background border border-border/40 p-6 space-y-6 shadow-sm">
                 <h3 className="font-serif text-xl text-primary border-b border-border/40 pb-3">Core Competencies</h3>
                 <ul className="space-y-3">
-                  {["Lean Six Sigma", "Global Supply Chain", "P&L Management", "Multi-Site Operations", "Operational Excellence", "Logistics Optimization", "Strategic Planning", "Change Management"].map((skill) => (
+                  {["Multi-Site & Portfolio Operations", "Operations Scaling & Platform Build-Out", "P&L Ownership", "Lean Manufacturing", "Operational Excellence", "Change Management", "High-Reliability Operations", "Maintenance Systems"].map((skill) => (
                     <li key={skill} className="flex items-center gap-3 text-primary/90">
                       <CheckCircle2 className="w-4 h-4 text-secondary shrink-0" />
                       <span className="text-sm font-medium">{skill}</span>
