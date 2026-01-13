@@ -132,7 +132,7 @@ export default function Vision() {
                 </CardHeader>
                 <CardContent className="text-muted-foreground">
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 1: Understand current system capabilities if an ERP is present.</li>
+                    <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 1: Baseline current NetSuite capabilities and usage.</li>
                     <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Phase 2: Leverage current system capabilities.</li>
                     <li className="flex items-start gap-2"><ArrowRight size={14} className="mt-1 text-accent" /> Create a single source of truth across areas.</li>
                   </ul>
